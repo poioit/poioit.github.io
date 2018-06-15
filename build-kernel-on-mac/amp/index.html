@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Nginx</title>
+    <title>build kernel on mac</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -15,15 +15,15 @@
     
     <meta property="og:site_name" content="Urlaw">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Nginx">
-    <meta property="og:description" content="Setup Nginx on mac os. howto github: buster generate  --web-url=poioit.github.io">
-    <meta property="og:url" content="http://localhost:2368/nginx/">
-    <meta property="article:published_time" content="2018-06-12T15:24:30.000Z">
-    <meta property="article:modified_time" content="2018-06-12T15:52:35.000Z">
+    <meta property="og:title" content="build kernel on mac">
+    <meta property="og:description" content="If we need to build the kernel on mac. we need some tool to compile the kernel brew install libelf wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h cp elf.h /usr/local/include/ wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h cp elftypes.">
+    <meta property="og:url" content="http://localhost:2368/build-kernel-on-mac/">
+    <meta property="article:published_time" content="2018-06-15T15:16:34.000Z">
+    <meta property="article:modified_time" content="2018-06-15T15:39:29.000Z">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Nginx">
-    <meta name="twitter:description" content="Setup Nginx on mac os. howto github: buster generate  --web-url=poioit.github.io">
-    <meta name="twitter:url" content="http://localhost:2368/nginx/">
+    <meta name="twitter:title" content="build kernel on mac">
+    <meta name="twitter:description" content="If we need to build the kernel on mac. we need some tool to compile the kernel brew install libelf wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h cp elf.h /usr/local/include/ wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h cp elftypes.">
+    <meta name="twitter:url" content="http://localhost:2368/build-kernel-on-mac/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="poioit">
     
@@ -47,11 +47,11 @@
         "url": "http://localhost:2368/author/poioit/",
         "sameAs": []
     },
-    "headline": "Nginx",
-    "url": "http://localhost:2368/nginx/",
-    "datePublished": "2018-06-12T15:24:30.000Z",
-    "dateModified": "2018-06-12T15:52:35.000Z",
-    "description": "Setup Nginx on mac os. howto github: buster generate  --web-url&#x3D;poioit.github.io",
+    "headline": "build kernel on mac",
+    "url": "http://localhost:2368/build-kernel-on-mac/",
+    "datePublished": "2018-06-15T15:16:34.000Z",
+    "dateModified": "2018-06-15T15:39:29.000Z",
+    "description": "If we need to build the kernel on mac. we need some tool to compile the kernel brew install libelf wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h cp elf.h /usr/local/include/ wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h cp elftypes.",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -83,18 +83,51 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">Nginx</h1>
+                <h1 class="post-title">build kernel on mac</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../author/poioit/">poioit</a></p>
-                    <time class="post-date" datetime="2018-06-12">2018-06-12</time>
+                    <time class="post-date" datetime="2018-06-15">2018-06-15</time>
                 </section>
             </header>
             <section class="post-content">
 
-                <div class="kg-card-markdown"><p>Setup Nginx on mac os.<br>
-howto<br>
-github:<br>
-buster generate  --web-url=poioit.github.io</p>
+                <div class="kg-card-markdown"><p>If we need to build the kernel on mac.<br>
+we need some tool to compile the kernel</p>
+<ol>
+<li>brew install libelf</li>
+<li>wget <a href="https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h">https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h</a></li>
+<li>cp elf.h /usr/local/include/</li>
+<li>wget <a href="https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h">https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h</a></li>
+<li>cp elftypes.h /usr/local/include/</li>
+<li>add the following code into elf.h</li>
+</ol>
+<pre><code class="language-language-clike">#define R_386_NONE 0
+#define R_386_32 1
+#define R_386_PC32 2
+#define R_ARM_NONE 0
+#define R_ARM_PC24 1
+#define R_ARM_ABS32 2
+#define R_MIPS_NONE 0
+#define R_MIPS_16 1
+#define R_MIPS_32 2
+#define R_MIPS_REL32 3
+#define R_MIPS_26 4
+#define R_MIPS_HI16 5
+#define R_MIPS_LO16 6
+#define R_IA64_IMM64 0x23 /* symbol + addend, mov imm64 */
+#define R_PPC_ADDR32 1 /* 32bit absolute address */
+#define R_PPC64_ADDR64 38 /* doubleword64 S + A */
+#define R_SH_DIR32 1
+#define R_SPARC_64 32 /* Direct 64 bit */
+#define R_X86_64_64 1 /* Direct 64 bit */
+#define R_390_32 4 /* Direct 32 bit. */
+#define R_390_64 22 /* Direct 64 bit. */
+#define R_MIPS_64 18
+</code></pre>
+<ol start="7">
+<li>brew install gnu-sed --with-default-names</li>
+<li>export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"</li>
+</ol>
 </div>
 
             </section>

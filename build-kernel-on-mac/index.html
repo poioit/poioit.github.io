@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Nginx</title>
+    <title>build kernel on mac</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,15 +17,15 @@
     
     <meta property="og:site_name" content="Urlaw">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Nginx">
-    <meta property="og:description" content="Setup Nginx on mac os. howto github: buster generate  --web-url=poioit.github.io">
-    <meta property="og:url" content="http://localhost:2368/nginx/">
-    <meta property="article:published_time" content="2018-06-12T15:24:30.000Z">
-    <meta property="article:modified_time" content="2018-06-12T15:52:35.000Z">
+    <meta property="og:title" content="build kernel on mac">
+    <meta property="og:description" content="If we need to build the kernel on mac. we need some tool to compile the kernel brew install libelf wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h cp elf.h /usr/local/include/ wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h cp elftypes.">
+    <meta property="og:url" content="http://localhost:2368/build-kernel-on-mac/">
+    <meta property="article:published_time" content="2018-06-15T15:16:34.000Z">
+    <meta property="article:modified_time" content="2018-06-15T15:39:29.000Z">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Nginx">
-    <meta name="twitter:description" content="Setup Nginx on mac os. howto github: buster generate  --web-url=poioit.github.io">
-    <meta name="twitter:url" content="http://localhost:2368/nginx/">
+    <meta name="twitter:title" content="build kernel on mac">
+    <meta name="twitter:description" content="If we need to build the kernel on mac. we need some tool to compile the kernel brew install libelf wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h cp elf.h /usr/local/include/ wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h cp elftypes.">
+    <meta name="twitter:url" content="http://localhost:2368/build-kernel-on-mac/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="poioit">
     
@@ -49,11 +49,11 @@
         "url": "http://localhost:2368/author/poioit/",
         "sameAs": []
     },
-    "headline": "Nginx",
-    "url": "http://localhost:2368/nginx/",
-    "datePublished": "2018-06-12T15:24:30.000Z",
-    "dateModified": "2018-06-12T15:52:35.000Z",
-    "description": "Setup Nginx on mac os. howto github: buster generate  --web-url&#x3D;poioit.github.io",
+    "headline": "build kernel on mac",
+    "url": "http://localhost:2368/build-kernel-on-mac/",
+    "datePublished": "2018-06-15T15:16:34.000Z",
+    "dateModified": "2018-06-15T15:39:29.000Z",
+    "description": "If we need to build the kernel on mac. we need some tool to compile the kernel brew install libelf wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h cp elf.h /usr/local/include/ wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h cp elftypes.",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -106,17 +106,50 @@ ghost.init({
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="2018-06-12">12 June 2018</time>
+                    <time class="post-full-meta-date" datetime="2018-06-15">15 June 2018</time>
                 </section>
-                <h1 class="post-full-title">Nginx</h1>
+                <h1 class="post-full-title">build kernel on mac</h1>
             </header>
 
 
             <section class="post-full-content">
-                <div class="kg-card-markdown"><p>Setup Nginx on mac os.<br>
-howto<br>
-github:<br>
-buster generate  --web-url=poioit.github.io</p>
+                <div class="kg-card-markdown"><p>If we need to build the kernel on mac.<br>
+we need some tool to compile the kernel</p>
+<ol>
+<li>brew install libelf</li>
+<li>wget <a href="https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h">https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h</a></li>
+<li>cp elf.h /usr/local/include/</li>
+<li>wget <a href="https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h">https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h</a></li>
+<li>cp elftypes.h /usr/local/include/</li>
+<li>add the following code into elf.h</li>
+</ol>
+<pre><code class="language-language-clike">#define R_386_NONE 0
+#define R_386_32 1
+#define R_386_PC32 2
+#define R_ARM_NONE 0
+#define R_ARM_PC24 1
+#define R_ARM_ABS32 2
+#define R_MIPS_NONE 0
+#define R_MIPS_16 1
+#define R_MIPS_32 2
+#define R_MIPS_REL32 3
+#define R_MIPS_26 4
+#define R_MIPS_HI16 5
+#define R_MIPS_LO16 6
+#define R_IA64_IMM64 0x23 /* symbol + addend, mov imm64 */
+#define R_PPC_ADDR32 1 /* 32bit absolute address */
+#define R_PPC64_ADDR64 38 /* doubleword64 S + A */
+#define R_SH_DIR32 1
+#define R_SPARC_64 32 /* Direct 64 bit */
+#define R_X86_64_64 1 /* Direct 64 bit */
+#define R_390_32 4 /* Direct 32 bit. */
+#define R_390_64 22 /* Direct 64 bit. */
+#define R_MIPS_64 18
+</code></pre>
+<ol start="7">
+<li>brew install gnu-sed --with-default-names</li>
+<li>export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"</li>
+</ol>
 </div>
             </section>
 
@@ -150,14 +183,15 @@ buster generate  --web-url=poioit.github.io</p>
     <div class="inner">
         <div class="read-next-feed">
 
+
                 <article class="post-card post no-image">
     <div class="post-card-content">
-        <a class="post-card-content-link" href="../build-kernel-on-mac/">
+        <a class="post-card-content-link" href="../nginx/">
             <header class="post-card-header">
-                <h2 class="post-card-title">build kernel on mac</h2>
+                <h2 class="post-card-title">Nginx</h2>
             </header>
             <section class="post-card-excerpt">
-                <p>If we need to build the kernel on mac. we need some tool to compile the kernel brew install libelf wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h cp elf.</p>
+                <p>Setup Nginx on mac os. howto github: buster generate  --web-url=poioit.github.io</p>
             </section>
         </a>
         <footer class="post-card-meta">
@@ -180,40 +214,6 @@ buster generate  --web-url=poioit.github.io</p>
     </div>
 </article>
 
-                <article class="post-card post tag-getting-started">
-        <a class="post-card-image-link" href="../welcome/">
-            <div class="post-card-image" style="background-image: url(https://casper.ghost.org/v1.0.0/images/welcome.jpg)"></div>
-        </a>
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="../welcome/">
-            <header class="post-card-header">
-                    <span class="post-card-tags">Getting Started</span>
-                <h2 class="post-card-title">Welcome to Ghost</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>Hey! Welcome to Ghost, it's great to have you :) We know that first impressions are important, so we've populated your new site with some initial Getting Started posts that will help you get</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-
-            <ul class="author-list">
-                <li class="author-list-item">
-
-                    <div class="author-name-tooltip">
-                        Ghost
-                    </div>
-
-                        <a href="../author/ghost/" class="static-avatar author-profile-image"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
-</a>
-                </li>
-            </ul>
-
-            <span class="reading-time">1 min read</span>
-
-        </footer>
-    </div>
-</article>
-
         </div>
     </div>
 </aside>
@@ -225,16 +225,16 @@ buster generate  --web-url=poioit.github.io</p>
         </a>
     </div>
     <span class="floating-header-divider">—</span>
-    <div class="floating-header-title">Nginx</div>
+    <div class="floating-header-title">build kernel on mac</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"></path>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Nginx&amp;url=http://localhost:2368/nginx/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=build%20kernel%20on%20mac&amp;url=http://localhost:2368/build-kernel-on-mac/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/nginx/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/build-kernel-on-mac/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
         </a>
     </div>
