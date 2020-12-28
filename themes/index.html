@@ -3,20 +3,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Setting up your own Ghost theme</title>
+    <title>Creating a custom theme</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preload" href="../assets/css/app.css?v=cd8c39feb0" as="style">
-    <link rel="preload" href="../assets/js/manifest.js?v=cd8c39feb0" as="script">
-    <link rel="preload" href="../assets/js/vendor/content-api.min.js?v=cd8c39feb0" as="script">
-    <link rel="preload" href="../assets/js/vendor.js?v=cd8c39feb0" as="script">
-    <link rel="preload" href="../assets/js/app.js?v=cd8c39feb0" as="script">
+    <link rel="preload" href="../assets/css/app.css?v=474c16c1b0" as="style">
+    <link rel="preload" href="../assets/js/manifest.js?v=474c16c1b0" as="script">
+    <link rel="preload" href="../assets/js/vendor/content-api.min.js?v=474c16c1b0" as="script">
+    <link rel="preload" href="../assets/js/vendor.js?v=474c16c1b0" as="script">
+    <link rel="preload" href="../assets/js/app.js?v=474c16c1b0" as="script">
     <link rel="preconnect" href="https://polyfill.io">
     <link rel="dns-prefetch" href="https://polyfill.io">
 
-      <link rel="preload" href="../assets/css/post.css?v=cd8c39feb0" as="style">
-  <link rel="preload" href="../assets/js/post.js?v=cd8c39feb0" as="script">
+      <link rel="preload" href="../assets/css/post.css?v=474c16c1b0" as="style">
+  <link rel="preload" href="../assets/js/post.js?v=474c16c1b0" as="script">
 
 
     <style>
@@ -29,8 +29,8 @@
         font-weight: 400;
         font-display: swap;
         src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
-            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=cd8c39feb0") format('woff2'),
-            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=cd8c39feb0") format('woff');
+            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=474c16c1b0") format('woff2'),
+            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=474c16c1b0") format('woff');
       }
 
       /* source-sans-pro-600 */
@@ -40,8 +40,8 @@
         font-weight: 600;
         font-display: swap;
         src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'),
-            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=cd8c39feb0") format('woff2'),
-            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=cd8c39feb0") format('woff');
+            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=474c16c1b0") format('woff2'),
+            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=474c16c1b0") format('woff');
       }
 
       /* source-sans-pro-700 */
@@ -51,8 +51,8 @@
         font-weight: 700;
         font-display: swap;
         src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
-            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=cd8c39feb0") format('woff2'),
-            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=cd8c39feb0") format('woff');
+            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=474c16c1b0") format('woff2'),
+            url("../assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=474c16c1b0") format('woff');
       }
 
       /* iconmoon */
@@ -61,17 +61,17 @@
         font-weight: normal;
         font-style: normal;
         font-display: swap;
-        src: url("../assets/fonts/icomoon/icomoon.eot?aoz2mo?v=cd8c39feb0");
+        src: url("../assets/fonts/icomoon/icomoon.eot?aoz2mo?v=474c16c1b0");
         src: url("../assets/fonts/icomoon/icomoon.eot?aoz2mo") format('embedded-opentype'),
-        url("../assets/fonts/icomoon/icomoon.ttf?aoz2mo?v=cd8c39feb0") format('truetype'),
-        url("../assets/fonts/icomoon/icomoon.woff?aoz2mo?v=cd8c39feb0") format('woff'),
+        url("../assets/fonts/icomoon/icomoon.ttf?aoz2mo?v=474c16c1b0") format('truetype'),
+        url("../assets/fonts/icomoon/icomoon.woff?aoz2mo?v=474c16c1b0") format('woff'),
         url("../assets/fonts/icomoon/icomoon.svg?aoz2mo") format('svg');
       }
     </style>
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/app.css?v=cd8c39feb0" media="screen">
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css?v=474c16c1b0" media="screen">
 
-      <link rel="stylesheet" type="text/css" href="../assets/css/post.css?v=cd8c39feb0" media="screen">
+      <link rel="stylesheet" type="text/css" href="../assets/css/post.css?v=474c16c1b0" media="screen">
 
 
     
@@ -83,26 +83,29 @@
     
     <meta property="og:site_name" content="矽谷吃翰">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Setting up your own Ghost theme">
-    <meta property="og:description" content="Creating a totally custom design for your publication  Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes. However, Ghost can also be completely themed to suit your needs. Rather than just giving">
+    <meta property="og:title" content="Creating a custom theme">
+    <meta property="og:description" content="Ghost comes with a beautiful default theme designed for publishers which can easily be adapted for most purposes, or you can build a custom theme to suit your needs.">
     <meta property="og:url" content="http://localhost:2368/themes/">
-    <meta property="og:image" content="https://casper.ghost.org/v1.0.0/images/design.jpg">
-    <meta property="article:published_time" content="2018-05-28T16:30:20.000Z">
-    <meta property="article:modified_time" content="2018-05-28T16:30:20.000Z">
+    <meta property="og:image" content="https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png">
+    <meta property="article:published_time" content="2020-12-28T04:06:39.000Z">
+    <meta property="article:modified_time" content="2020-12-28T04:06:39.000Z">
     <meta property="article:tag" content="Getting Started">
     
     <meta property="article:publisher" content="https://www.facebook.com/hank.chen.988/">
+    <meta property="article:author" content="https://www.facebook.com/ghost">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Setting up your own Ghost theme">
-    <meta name="twitter:description" content="Creating a totally custom design for your publication  Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes. However, Ghost can also be completely themed to suit your needs. Rather than just giving">
+    <meta name="twitter:title" content="Creating a custom theme">
+    <meta name="twitter:description" content="Ghost comes with a beautiful default theme designed for publishers which can easily be adapted for most purposes, or you can build a custom theme to suit your needs.">
     <meta name="twitter:url" content="http://localhost:2368/themes/">
-    <meta name="twitter:image" content="https://casper.ghost.org/v1.0.0/images/design.jpg">
+    <meta name="twitter:image" content="https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Ghost">
     <meta name="twitter:label2" content="Filed under">
     <meta name="twitter:data2" content="Getting Started">
-    <meta property="og:image:width" content="1400">
-    <meta property="og:image:height" content="1050">
+    <meta name="twitter:site" content="@ghost">
+    <meta name="twitter:creator" content="ghost">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1216">
     
     <script type="application/ld+json">
 {
@@ -120,21 +123,31 @@
     "author": {
         "@type": "Person",
         "name": "Ghost",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://static.ghost.org/v3.0.0/images/ghost.png",
+            "width": 400,
+            "height": 400
+        },
         "url": "http://localhost:2368/author/ghost/",
-        "sameAs": []
+        "sameAs": [
+            "https://ghost.org",
+            "https://www.facebook.com/ghost",
+            "https://twitter.com/ghost"
+        ]
     },
-    "headline": "Setting up your own Ghost theme",
+    "headline": "Creating a custom theme",
     "url": "http://localhost:2368/themes/",
-    "datePublished": "2018-05-28T16:30:20.000Z",
-    "dateModified": "2018-05-28T16:30:20.000Z",
+    "datePublished": "2020-12-28T04:06:39.000Z",
+    "dateModified": "2020-12-28T04:06:39.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "https://casper.ghost.org/v1.0.0/images/design.jpg",
-        "width": 1400,
-        "height": 1050
+        "url": "https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png",
+        "width": 2000,
+        "height": 1216
     },
     "keywords": "Getting Started",
-    "description": "Creating a totally custom design for your publication\n\nGhost comes with a beautiful default theme called Casper, which is designed to\nbe a clean, readable publication layout and can be easily adapted for most\npurposes. However, Ghost can also be completely themed to suit your needs.\nRather than just giving you a few basic settings which act as a poor proxy for\ncode, we just let you write code.\n\nThere are a huge range of both free and premium pre-built themes which you can\nget from the Ghost Them",
+    "description": "Ghost comes with a beautiful default theme designed for publishers which can easily be adapted for most purposes, or you can build a custom theme to suit your needs.",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -252,8 +265,11 @@
     <li class="nav-home">
       <a href="../">Home</a>
     </li>
+    <li class="nav-tag">
+      <a href="../tag/getting-started/">Tag</a>
+    </li>
     <li class="nav-author">
-      <a href="../authors/">Author</a>
+      <a href="../author/">Author</a>
     </li>
     <li class="nav-she-tuan-guan-jia-gong">
       <a href="https://www.luxurai.com/">社團管家公</a>
@@ -279,47 +295,47 @@
                             <div class="glide__track" data-glide-el="track">
                               <div class="glide__slides">
                                 <div class="glide__slide">
-                                  <a href="../authors/" class="m-recent-article">
+                                  <a href="../author/" class="m-recent-article">
                                     <div class="m-recent-article__picture ">
                                         <img src="../content/images/size/w300/2020/12/20190526_111545_HDR.jpg" loading="lazy" alt="">
                                     </div>
-                                    <h3 class="m-recent-article__title js-recent-article-title" title="Authors">
-                                      Authors
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Author">
+                                      Author
+                                    </h3>
+                                    <span class="m-recent-article__date">3 hours ago</span>
+                                  </a>
+                                </div>
+                                <div class="glide__slide">
+                                  <a href="../publishing-options/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="https://static.ghost.org/v3.0.0/images/publishing-options.png" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Publishing options">
+                                      Publishing options
                                     </h3>
                                     <span class="m-recent-article__date">4 hours ago</span>
                                   </a>
                                 </div>
                                 <div class="glide__slide">
-                                  <a href="../react-native/" class="m-recent-article">
-                                    <div class="m-recent-article__picture no-picture">
-                                        <img src="../assets/images/no-image.png?v=cd8c39feb0" loading="lazy" alt="">
-                                    </div>
-                                    <h3 class="m-recent-article__title js-recent-article-title" title="React Native">
-                                      React Native
-                                    </h3>
-                                    <span class="m-recent-article__date">2 years ago</span>
-                                  </a>
-                                </div>
-                                <div class="glide__slide">
-                                  <a href="../pod/" class="m-recent-article">
-                                    <div class="m-recent-article__picture no-picture">
-                                        <img src="../assets/images/no-image.png?v=cd8c39feb0" loading="lazy" alt="">
-                                    </div>
-                                    <h3 class="m-recent-article__title js-recent-article-title" title="pod">
-                                      pod
-                                    </h3>
-                                    <span class="m-recent-article__date">2 years ago</span>
-                                  </a>
-                                </div>
-                                <div class="glide__slide">
-                                  <a href="../kaggle/" class="m-recent-article">
+                                  <a href="../admin-settings/" class="m-recent-article">
                                     <div class="m-recent-article__picture ">
-                                        <img src="../content/images/size/w300/2020/12/IMG_5025-3.jpg" loading="lazy" alt="">
+                                        <img src="https://static.ghost.org/v3.0.0/images/admin-settings.png" loading="lazy" alt="">
                                     </div>
-                                    <h3 class="m-recent-article__title js-recent-article-title" title="Kaggle">
-                                      Kaggle
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Managing admin settings">
+                                      Managing admin settings
                                     </h3>
-                                    <span class="m-recent-article__date">2 years ago</span>
+                                    <span class="m-recent-article__date">4 hours ago</span>
+                                  </a>
+                                </div>
+                                <div class="glide__slide">
+                                  <a href="../organising-content/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="https://static.ghost.org/v3.0.0/images/organising-your-content.png" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Organising your content">
+                                      Organising your content
+                                    </h3>
+                                    <span class="m-recent-article__date">4 hours ago</span>
                                   </a>
                                 </div>
                               </div>
@@ -331,12 +347,6 @@
                         <ul>
                             <li>
                               <a href="../tag/getting-started/">Getting Started</a>
-                            </li>
-                            <li>
-                              <a href="../tag/kernel/">Kernel</a>
-                            </li>
-                            <li>
-                              <a href="../tag/nginx/">Nginx</a>
                             </li>
                         </ul>
                     </section>
@@ -368,8 +378,8 @@
     <div id="secondary-navigation-template" style="display: none;">
       
   <ul class="m-secondary-menu">
-      <li class="nav-my-youtube">
-        <a href="https://www.youtube.com/user/poioitslash33">My Youtube</a>
+      <li class="nav-myyoutube">
+        <a href="https://www.youtube.com/user/poioitslash33">MyYoutube</a>
       </li>
   </ul>
 
@@ -381,11 +391,11 @@
   <section class="m-hero with-picture" data-aos="fade">
     <div class="m-hero__picture in-post">
       <img srcset="
-          https://casper.ghost.org/v1.0.0/images/design.jpg 300w,
-          https://casper.ghost.org/v1.0.0/images/design.jpg 600w,
-          https://casper.ghost.org/v1.0.0/images/design.jpg 1000w,
-          https://casper.ghost.org/v1.0.0/images/design.jpg 2000w
-        " sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 2000px" src="https://casper.ghost.org/v1.0.0/images/design.jpg" alt="">
+          https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png 300w,
+          https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png 600w,
+          https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png 1000w,
+          https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png 2000w
+        " sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 2000px" src="https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png" alt="">
     </div>
     </section>
   
@@ -394,11 +404,11 @@
         <div class="l-wrapper in-post  js-aos-wrapper" data-aos="fade-up" data-aos-delay="300">
           <div class="l-post-content  has-subscribe-form js-progress-content">
             <header class="m-heading">
-              <h1 class="m-heading__title in-post">Setting up your own Ghost theme</h1>
+              <h1 class="m-heading__title in-post">Creating a custom theme</h1>
               <div class="m-heading__meta">
                   <a href="../tag/getting-started/" class="m-heading__meta__tag">Getting Started</a>
                   <span class="m-heading__meta__divider" aria-hidden="true">•</span>
-                <span class="m-heading__meta__time">May 28, 2018</span>
+                <span class="m-heading__meta__time">Dec 27, 2020</span>
               </div>
             </header>
             <div class="pos-relative js-post-content">
@@ -407,7 +417,7 @@
                   <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/themes/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
                     <span class="icon-facebook" aria-hidden="true"></span>
                   </a>
-                  <a href="https://twitter.com/intent/tweet?text=Setting%20up%20your%20own%20Ghost%20theme&amp;url=http://localhost:2368/themes/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
+                  <a href="https://twitter.com/intent/tweet?text=Creating%20a%20custom%20theme&amp;url=http://localhost:2368/themes/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
                     <span class="icon-twitter" aria-hidden="true"></span>
                   </a>
                   <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="Scroll to top">
@@ -418,24 +428,7 @@
                   </button>
                 </div>
               </div>
-              <!--kg-card-begin: markdown--><p>Creating a totally custom design for your publication</p>
-<p>Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes. However, Ghost can also be completely themed to suit your needs. Rather than just giving you a few basic settings which act as a poor proxy for code, we just let you write code.</p>
-<p>There are a huge range of both free and premium pre-built themes which you can get from the <a href="http://marketplace.ghost.org">Ghost Theme Marketplace</a>, or you can simply create your own from scratch.</p>
-<p><a href="http://marketplace.ghost.org"><img src="https://casper.ghost.org/v1.0.0/images/marketplace.jpg" alt="marketplace"></a></p>
-<blockquote>
-<p>Anyone can write a completely custom Ghost theme, with just some solid knowledge of HTML and CSS</p>
-</blockquote>
-<p>Ghost themes are written with a templating language called handlebars, which has a bunch of dynamic helpers to insert your data into template files. Like <code>{{author.name}}</code>, for example, outputs the name of the current author.</p>
-<p>The best way to learn how to write your own Ghost theme is to have a look at <a href="https://github.com/TryGhost/Casper">the source code for Casper</a>, which is heavily commented and should give you a sense of how everything fits together.</p>
-<ul>
-<li><code>default.hbs</code> is the main template file, all contexts will load inside this file unless specifically told to use a different template.</li>
-<li><code>post.hbs</code> is the file used in the context of viewing a post.</li>
-<li><code>index.hbs</code> is the file used in the context of viewing the home page.</li>
-<li>and so on</li>
-</ul>
-<p>We've got <a href="http://themes.ghost.org/docs/about">full and extensive theme documentation</a> which outlines every template file, context and helper that you can use.</p>
-<p>If you want to chat with other people making Ghost themes to get any advice or help, there's also a <strong>#themes</strong> channel in our <a href="https://slack.ghost.org">public Slack community</a> which we always recommend joining!</p>
-<!--kg-card-end: markdown-->
+              <h2 id="ghost-themes">Ghost themes</h2><p>Ghost comes with a default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes.</p><p>If you need something a little more customised, it's entirely possible to build on top of existing open source themes, or to build your own from scratch. Rather than giving you a few basic settings which act as a poor proxy for code, we just let you write code.</p><h2 id="marketplace">Marketplace</h2><p>There are a huge range of both free and premium pre-built themes which you can download from the <a href="https://ghost.org/marketplace/">Ghost Theme Marketplace</a>:</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://static.ghost.org/v3.0.0/images/theme-marketplace.png" class="kg-image" alt="Ghost theme marketplace screenshot"><figcaption>Anyone can write a completely custom Ghost theme with some solid knowledge of HTML and CSS</figcaption></figure><h2 id="theme-development">Theme development</h2><p>Ghost themes are written with a templating language called handlebars, which has a set of dynamic helpers to insert your data into template files. For example: <code>{{author.name}}</code> outputs the name of the current author.</p><p>The best way to learn how to write your own Ghost theme is to have a look at <a href="https://github.com/TryGhost/Casper">the source code for Casper</a>, which is heavily commented and should give you a sense of how everything fits together.<br></p><ul><li><code>default.hbs</code> is the main template file, all contexts will load inside this file unless specifically told to use a different template.</li><li><code>post.hbs</code> is the file used in the context of viewing a post.</li><li><code>index.hbs</code> is the file used in the context of viewing the home page.</li><li>and so on</li></ul><p>We've got <a href="https://ghost.org/docs/api/handlebars-themes/">full and extensive theme documentation</a> which outlines every template file, context and helper that you can use. You can also get started with our useful <a href="https://github.com/TryGhost/Starter/">starter theme</a>, which includes the most common foundations and components required to build your own theme.</p><blockquote>If you want to chat with other people making Ghost themes to get any advice or help, there's also a <strong>themes</strong> section on our <a href="https://forum.ghost.org/c/themes">public Ghost forum</a>.</blockquote>
                 <section class="m-tags in-post">
                   <h3 class="m-submenu-title">Tags</h3>
                   <ul>
@@ -469,7 +462,7 @@
     </div>
     <div class="m-subscribe__success">
       <header class="m-heading no-margin">
-        <img src="../assets/images/success.png?v=cd8c39feb0" alt="Success!" class="m-subscribe__success_icon">
+        <img src="../assets/images/success.png?v=474c16c1b0" alt="Success!" class="m-subscribe__success_icon">
         <p class="m-heading__description in-newsletter-form">
           Now check your inbox and click the link to confirm your subscription.
         </p>
@@ -491,7 +484,7 @@
           <div class="m-author__content">
             <div class="m-author__picture">
               <a href="../author/ghost/" class="m-author-picture" aria-label="Ghost">
-                  <div style="background-image: url(../assets/images/default-avatar-square-small.jpg?v=cd8c39feb0);"></div>
+                  <div style="background-image: url(https://static.ghost.org/v3.0.0/images/ghost.png);"></div>
               </a>
             </div>
             <div class="m-author__info">
@@ -500,6 +493,21 @@
               </h4>
                 <p class="m-author__bio">You can delete this user to remove all the welcome posts</p>
               <ul class="m-author-links">
+                  <li>
+                    <a href="https://ghost.org" target="_blank" rel="noopener" aria-label="Website">
+                      <span class="icon-globe" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com/ghost" target="_blank" rel="noopener" aria-label="Facebook">
+                      <span class="icon-facebook" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/ghost" target="_blank" rel="noopener" aria-label="Twitter">
+                      <span class="icon-twitter" aria-hidden="true"></span>
+                    </a>
+                  </li>
               </ul>
             </div>
           </div>
@@ -515,24 +523,24 @@
     <div class="m-recommended-slider__item glide__slide">
   <article class="m-article-card  post tag-getting-started">
     <div class="m-article-card__picture">
-      <a href="../welcome/" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
-        <img class="m-article-card__picture-background" src="https://casper.ghost.org/v1.0.0/images/welcome.jpg" loading="lazy" alt="">
+      <a href="../publishing-options/" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
+        <img class="m-article-card__picture-background" src="https://static.ghost.org/v3.0.0/images/publishing-options.png" loading="lazy" alt="">
       <a href="../author/ghost/" class="m-article-card__author js-tooltip" aria-label="Ghost" data-tippy-content="Posted by Ghost ">
-          <div style="background-image: url(../assets/images/default-avatar-square-small.jpg?v=cd8c39feb0);"></div>
+          <div style="background-image: url(https://static.ghost.org/v3.0.0/images/ghost.png);"></div>
       </a>
     </div>
       <div class="m-article-card__info">
         <a href="../tag/getting-started/" class="m-article-card__tag">Getting Started</a>
-      <a href="../welcome/" class="m-article-card__info-link" aria-label="Welcome to Ghost">
+      <a href="../publishing-options/" class="m-article-card__info-link" aria-label="Publishing options">
         <div>
-          <h2 class="m-article-card__title js-article-card-title " title="Welcome to Ghost">
-            Welcome to Ghost
+          <h2 class="m-article-card__title js-article-card-title " title="Publishing options">
+            Publishing options
           </h2>
         </div>
         <div class="m-article-card__timestamp">
-          <span>3 years ago</span>
+          <span>4 hours ago</span>
           <span>•</span>
-          <span>1 min read</span>
+          <span>2 min read</span>
         </div>
       </a>
     </div>
@@ -541,24 +549,24 @@
     <div class="m-recommended-slider__item glide__slide">
   <article class="m-article-card  post tag-getting-started">
     <div class="m-article-card__picture">
-      <a href="../the-editor/" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
-        <img class="m-article-card__picture-background" src="https://casper.ghost.org/v1.0.0/images/writing.jpg" loading="lazy" alt="">
+      <a href="../admin-settings/" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
+        <img class="m-article-card__picture-background" src="https://static.ghost.org/v3.0.0/images/admin-settings.png" loading="lazy" alt="">
       <a href="../author/ghost/" class="m-article-card__author js-tooltip" aria-label="Ghost" data-tippy-content="Posted by Ghost ">
-          <div style="background-image: url(../assets/images/default-avatar-square-small.jpg?v=cd8c39feb0);"></div>
+          <div style="background-image: url(https://static.ghost.org/v3.0.0/images/ghost.png);"></div>
       </a>
     </div>
       <div class="m-article-card__info">
         <a href="../tag/getting-started/" class="m-article-card__tag">Getting Started</a>
-      <a href="../the-editor/" class="m-article-card__info-link" aria-label="Using the Ghost editor">
+      <a href="../admin-settings/" class="m-article-card__info-link" aria-label="Managing admin settings">
         <div>
-          <h2 class="m-article-card__title js-article-card-title " title="Using the Ghost editor">
-            Using the Ghost editor
+          <h2 class="m-article-card__title js-article-card-title " title="Managing admin settings">
+            Managing admin settings
           </h2>
         </div>
         <div class="m-article-card__timestamp">
-          <span>3 years ago</span>
+          <span>4 hours ago</span>
           <span>•</span>
-          <span>3 min read</span>
+          <span>2 min read</span>
         </div>
       </a>
     </div>
@@ -567,22 +575,22 @@
     <div class="m-recommended-slider__item glide__slide">
   <article class="m-article-card  post tag-getting-started">
     <div class="m-article-card__picture">
-      <a href="../using-tags/" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
-        <img class="m-article-card__picture-background" src="https://casper.ghost.org/v1.0.0/images/tags.jpg" loading="lazy" alt="">
+      <a href="../organising-content/" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
+        <img class="m-article-card__picture-background" src="https://static.ghost.org/v3.0.0/images/organising-your-content.png" loading="lazy" alt="">
       <a href="../author/ghost/" class="m-article-card__author js-tooltip" aria-label="Ghost" data-tippy-content="Posted by Ghost ">
-          <div style="background-image: url(../assets/images/default-avatar-square-small.jpg?v=cd8c39feb0);"></div>
+          <div style="background-image: url(https://static.ghost.org/v3.0.0/images/ghost.png);"></div>
       </a>
     </div>
       <div class="m-article-card__info">
         <a href="../tag/getting-started/" class="m-article-card__tag">Getting Started</a>
-      <a href="../using-tags/" class="m-article-card__info-link" aria-label="Organising your content with tags">
+      <a href="../organising-content/" class="m-article-card__info-link" aria-label="Organising your content">
         <div>
-          <h2 class="m-article-card__title js-article-card-title " title="Organising your content with tags">
-            Organising your content with tags
+          <h2 class="m-article-card__title js-article-card-title " title="Organising your content">
+            Organising your content
           </h2>
         </div>
         <div class="m-article-card__timestamp">
-          <span>3 years ago</span>
+          <span>4 hours ago</span>
           <span>•</span>
           <span>2 min read</span>
         </div>
@@ -627,7 +635,7 @@
     </form>
     <div class="js-search-results hide"></div>
     <p class="m-not-found align-center hide js-no-results">
-      No results for your search, try something different.
+      No results for your search, please try with something else.
     </p>
   </div>
 </div>
@@ -638,8 +646,8 @@
       <nav class="m-footer__nav-secondary" role="navigation" aria-label="Secondary menu in footer">
         
   <ul class="m-secondary-menu">
-      <li class="nav-my-youtube">
-        <a href="https://www.youtube.com/user/poioitslash33">My Youtube</a>
+      <li class="nav-myyoutube">
+        <a href="https://www.youtube.com/user/poioitslash33">MyYoutube</a>
       </li>
   </ul>
 
@@ -647,6 +655,9 @@
     <nav class="m-footer-social">
         <a href="https://www.facebook.com/hank.chen.988/" target="_blank" rel="noopener" aria-label="Facebook">
           <span class="icon-facebook" aria-hidden="true"></span>
+        </a>
+        <a href="https://twitter.com/ghost" target="_blank" rel="noopener" aria-label="Twitter">
+          <span class="icon-twitter" aria-hidden="true"></span>
         </a>
       <a href="http://localhost:2368/rss" aria-label="RSS">
         <span class="icon-rss" aria-hidden="true"></span>
@@ -658,7 +669,7 @@
       <span>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
     </p>
     <p class="m-footer-copyright jslicense">
-      <a href="../assets/html/javascript.html?v=cd8c39feb0" rel="jslicense">JavaScript license information</a>
+      <a href="../assets/html/javascript.html?v=474c16c1b0" rel="jslicense">JavaScript license information</a>
     </p>
   </div>
 </footer>
@@ -691,12 +702,12 @@
   </button>
 </div>
     <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CPromise%2CArray.prototype.includes%2CString.prototype.endsWith%2CString.prototype.startsWith%2CObject.assign%2CNodeList.prototype.forEach"></script>
-    <script defer src="../assets/js/manifest.js?v=cd8c39feb0"></script>
-    <script defer src="../assets/js/vendor/content-api.min.js?v=cd8c39feb0"></script>
-    <script defer src="../assets/js/vendor.js?v=cd8c39feb0"></script>
-    <script defer src="../assets/js/app.js?v=cd8c39feb0"></script>
+    <script defer src="../assets/js/manifest.js?v=474c16c1b0"></script>
+    <script defer src="../assets/js/vendor/content-api.min.js?v=474c16c1b0"></script>
+    <script defer src="../assets/js/vendor.js?v=474c16c1b0"></script>
+    <script defer src="../assets/js/app.js?v=474c16c1b0"></script>
 
-      <script defer src="../assets/js/post.js?v=cd8c39feb0"></script>
+      <script defer src="../assets/js/post.js?v=474c16c1b0"></script>
 
 
     
