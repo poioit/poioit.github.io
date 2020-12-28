@@ -1,24 +1,307 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>矽谷吃翰</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>矽谷吃翰</title><link>http://localhost:2368/</link></image><generator>Ghost 3.40</generator><lastBuildDate>Mon, 28 Dec 2020 06:25:18 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Author</title><description>一生懸命いっしょけんめい
-盡力活出自我 享受人生</description><link>http://localhost:2368/author/</link><guid isPermaLink="false">5fe95d3e6aa65016443983e5</guid><dc:creator>Hank Chen</dc:creator><pubDate>Mon, 28 Dec 2020 04:22:57 GMT</pubDate><media:content url="http://localhost:2368/content/images/2020/12/20190526_111545_HDR.jpg" medium="image"/><content:encoded/></item><item><title>Publishing options</title><description>The Ghost editor post settings menu has everything you need to fully optimise and distribute your content effectively.</description><link>http://localhost:2368/publishing-options/</link><guid isPermaLink="false">5fe959cf76d2db06a8acad11</guid><category>Getting Started</category><dc:creator>Ghost</dc:creator><pubDate>Mon, 28 Dec 2020 04:06:43 GMT</pubDate><media:content url="https://static.ghost.org/v3.0.0/images/publishing-options.png" medium="image"/><content:encoded>&lt;h2 id="distribute-your-content"&gt;Distribute your content&lt;/h2&gt;&lt;img src="https://static.ghost.org/v3.0.0/images/publishing-options.png" alt="Publishing options"&gt;&lt;p&gt;Access the post settings menu by clicking the settings icon in the top right hand corner of the editor and discover everything you need to get your content ready for publishing. This is where you can edit things like tags, post URL, publish date and custom meta data.&lt;/p&gt;&lt;h2 id="feature-images-url-excerpts"&gt;Feature images, URL &amp;amp; excerpts&lt;/h2&gt;&lt;p&gt;Insert your post feature image from the very top of the post settings menu. Consider resizing or optimising your image first to ensure it's an appropriate size. Below this, you can set your post URL, publish date and add a custom excerpt.&lt;/p&gt;&lt;h2 id="tags-authors"&gt;Tags &amp;amp; authors&lt;/h2&gt;&lt;p&gt;You can easily add multiple tags and authors to any post to filter and organise the relationships between your content in Ghost.&lt;/p&gt;&lt;h2 id="structured-data-seo"&gt;Structured data &amp;amp; SEO&lt;/h2&gt;&lt;p&gt;There's no need to hard code your meta data. In fact, Ghost will generate default meta data automatically using the content in your post.&lt;/p&gt;&lt;p&gt;Alternatively, you can override this by adding a custom meta title and description, as well as unique information for social media sharing cards on Facebook and Twitter.&lt;/p&gt;&lt;p&gt;It's also possible to set custom canonicals, which is useful for guest posts or curated lists of external links.&lt;/p&gt;&lt;p&gt;Ghost will automatically implement &lt;strong&gt;structured data&lt;/strong&gt; for your publication using JSON-LD to further optimise your content.&lt;/p&gt;&lt;pre&gt;&lt;code&gt;{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Publishing options",
-        "logo": "https://static.ghost.org/ghost-logo.svg"
-    },
-    "author": {
-        "@type": "Person",
-        "name": "Ghost",
-        "url": "http://demo.ghost.io/author/ghost/",
-        "sameAs": []
-    },
-    "headline": "Publishing options",
-    "url": "http://demo.ghost.io/publishing-options",
-    "datePublished": "2018-08-08T11:44:00.000Z",
-    "dateModified": "2018-08-09T12:06:21.000Z",
-    "keywords": "Getting Started",
-    "description": "The Ghost editor has everything you need to fully optimise your content. This is where you can add tags and authors, feature a post, or turn a post into a page."
-}
-    &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can test that the structured data &lt;a href="https://schema.org/"&gt;schema&lt;/a&gt; on your site is working as it should using &lt;a href="https://search.google.com/structured-data/testing-tool" rel="noreferrer nofollow noopener"&gt;Google’s structured data tool&lt;/a&gt;. &lt;/p&gt;&lt;h2 id="code-injection"&gt;Code injection&lt;/h2&gt;&lt;p&gt;This tool allows you to inject code on a per post or page basis, or across your entire site. This means you can modify CSS, add unique tracking codes, or add other scripts to the head or foot of your publication without making edits to your theme files. &lt;/p&gt;&lt;p&gt;&lt;strong&gt;To add code site-wide&lt;/strong&gt;, use the code injection tool in the main admin menu. This is useful for adding a Google Analytics tracking code, or to start tracking with any other analytics tool.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;To add code to a post or page&lt;/strong&gt;, use the code injection tool within the post settings menu. This is useful if you want to add art direction, scripts or styles that are only applicable to one post or page.&lt;/p&gt;&lt;h2 id="next-admin-settings"&gt;Next: Admin settings&lt;/h2&gt;&lt;p&gt;Now you understand how to create and optimise content, let's explore some &lt;a href="http://localhost:2368/admin-settings/"&gt;admin settings&lt;/a&gt; so you can invite your team and start collaborating.&lt;/p&gt;</content:encoded></item><item><title>Managing admin settings</title><description>There are a couple of things to do next while you're getting set up: making your site private and inviting your team.</description><link>http://localhost:2368/admin-settings/</link><guid isPermaLink="false">5fe959cf76d2db06a8acad0f</guid><category>Getting Started</category><dc:creator>Ghost</dc:creator><pubDate>Mon, 28 Dec 2020 04:06:42 GMT</pubDate><media:content url="https://static.ghost.org/v3.0.0/images/admin-settings.png" medium="image"/><content:encoded>&lt;h2 id="make-your-site-private"&gt;Make your site private&lt;/h2&gt;&lt;img src="https://static.ghost.org/v3.0.0/images/admin-settings.png" alt="Managing admin settings"&gt;&lt;p&gt;If you've got a publication that you don't want the world to see yet because it's not ready to launch, you can hide your Ghost site behind a basic shared pass-phrase.&lt;/p&gt;&lt;p&gt;You can toggle this preference on at the bottom of Ghost's General Settings:&lt;/p&gt;&lt;figure class="kg-card kg-image-card"&gt;&lt;img src="https://static.ghost.org/v1.0.0/images/private.png" class="kg-image" alt="Managing admin settings"&gt;&lt;/figure&gt;&lt;p&gt;Ghost will give you a short, randomly generated pass-phrase which you can share with anyone who needs access to the site while you're working on it. While this setting is enabled, all search engine optimisation features will be switched off to help keep your site under the radar.&lt;/p&gt;&lt;p&gt;Do remember though, this is &lt;em&gt;not&lt;/em&gt; secure authentication. You shouldn't rely on this feature for protecting important private data. It's just a simple, shared pass-phrase for some very basic privacy.&lt;/p&gt;&lt;h2 id="invite-your-team"&gt;Invite your team &lt;/h2&gt;&lt;p&gt;Ghost has a number of different user roles for your team:&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Contributors&lt;/strong&gt;&lt;br&gt;This is the base user level in Ghost. Contributors can create and edit their own draft posts, but they are unable to edit drafts of others or publish posts. Contributors are &lt;strong&gt;untrusted&lt;/strong&gt; users with the most basic access to your publication.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Authors&lt;/strong&gt;&lt;br&gt;Authors are the 2nd user level in Ghost. Authors can write, edit  and publish their own posts. Authors are &lt;strong&gt;trusted&lt;/strong&gt; users. If you don't trust users to be allowed to publish their own posts, they should be set as Contributors.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Editors&lt;/strong&gt;&lt;br&gt;Editors are the 3rd user level in Ghost. Editors can do everything that an Author can do, but they can also edit and publish the posts of others - as well as their own. Editors can also invite new Contributors &amp;amp; Authors to the site.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Administrators&lt;/strong&gt;&lt;br&gt;The top user level in Ghost is Administrator. Again, administrators can do everything that Authors and Editors can do, but they can also edit all site settings and data, not just content. Additionally, administrators have full access to invite, manage or remove any other user of the site.&lt;br&gt;&lt;br&gt;&lt;strong&gt;The Owner&lt;/strong&gt;&lt;br&gt;There is only ever one owner of a Ghost site. The owner is a special user which has all the same permissions as an Administrator, but with two exceptions: The Owner can never be deleted. And in some circumstances the owner will have access to additional special settings if applicable. For example: billing details, if using &lt;a href="https://ghost.org/pricing/"&gt;&lt;strong&gt;Ghost(Pro)&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;&lt;blockquote&gt;&lt;em&gt;It's a good idea to ask all of your users to fill out their user profiles, including bio and social links. These will populate rich structured data for posts and generally create more opportunities for themes to fully populate their design.&lt;/em&gt;&lt;/blockquote&gt;&lt;h2 id="next-organising-content"&gt;Next: Organising content&lt;/h2&gt;&lt;p&gt;Find out how to &lt;a href="http://localhost:2368/organising-content/"&gt;organise your content&lt;/a&gt; with sensible tags and authors, or for more advanced configurations, how to create custom content structures using dynamic routing.&lt;/p&gt;</content:encoded></item><item><title>Organising your content</title><description>Ghost has a flexible organisational taxonomy called tags and the ability to create custom site structures using dynamic routes.</description><link>http://localhost:2368/organising-content/</link><guid isPermaLink="false">5fe959cf76d2db06a8acad0d</guid><category>Getting Started</category><dc:creator>Ghost</dc:creator><pubDate>Mon, 28 Dec 2020 04:06:41 GMT</pubDate><media:content url="https://static.ghost.org/v3.0.0/images/organising-your-content.png" medium="image"/><content:encoded>&lt;h2 id="sensible-tagging"&gt;Sensible tagging&lt;/h2&gt;&lt;img src="https://static.ghost.org/v3.0.0/images/organising-your-content.png" alt="Organising your content"&gt;&lt;p&gt;You can think of tags like Gmail labels. By tagging posts with one or more keyword, you can organise articles into buckets of related content.&lt;/p&gt;&lt;p&gt;When you create content for your publication you can assign tags to help differentiate between categories of content. &lt;/p&gt;&lt;p&gt;For example you may tag some content with News and other content with Podcast, which would create two distinct categories of content listed on &lt;code&gt;/tag/news/&lt;/code&gt; and &lt;code&gt;/tag/podcast/&lt;/code&gt;, respectively.&lt;/p&gt;&lt;p&gt;If you tag a post with both &lt;code&gt;News&lt;/code&gt; &lt;em&gt;and&lt;/em&gt; &lt;code&gt;Podcast&lt;/code&gt; - then it appears in both sections. Tag archives are like dedicated home-pages for each category of content that you have. They have their own pages, their own RSS feeds, and can support their own cover images and meta data.&lt;/p&gt;&lt;h3 id="the-primary-tag"&gt;The primary tag&lt;/h3&gt;&lt;p&gt;Inside the Ghost editor, you can drag and drop tags into a specific order. The first tag in the list is always given the most importance, and some themes will only display the primary tag (the first tag in the list) by default. &lt;/p&gt;&lt;blockquote&gt;&lt;em&gt;&lt;strong&gt;News&lt;/strong&gt;, Technology, Startup&lt;/em&gt;&lt;/blockquote&gt;&lt;p&gt;So you can add the most important tag which you want to show up in your theme, but also add related tags which are less important.&lt;/p&gt;&lt;h3 id="private-tags"&gt;Private tags&lt;/h3&gt;&lt;p&gt;Sometimes you may want to assign a post a specific tag, but you don't necessarily want that tag appearing in the theme or creating an archive page. In Ghost, hashtags are private and can be used for special styling.&lt;/p&gt;&lt;p&gt;For example, if you sometimes publish posts with video content - you might want your theme to adapt and get rid of the sidebar for these posts, to give more space for an embedded video to fill the screen. In this case, you could use private tags to tell your theme what to do.&lt;/p&gt;&lt;blockquote&gt;&lt;em&gt;&lt;strong&gt;News&lt;/strong&gt;, #video&lt;/em&gt;&lt;/blockquote&gt;&lt;p&gt;Here, the theme would assign the post publicly displayed tags of News - but it would also keep a private record of the post being tagged with #video. In your theme, you could then look for private tags conditionally and give them special formatting. &lt;/p&gt;&lt;blockquote&gt;&lt;em&gt;You can find documentation for theme development techniques like this and many more over on Ghost's extensive &lt;a href="https://ghost.org/docs/api/handlebars-themes/"&gt;theme docs&lt;/a&gt;.&lt;/em&gt;&lt;/blockquote&gt;&lt;h2 id="dynamic-routing"&gt;Dynamic routing&lt;/h2&gt;&lt;p&gt;Dynamic routing gives you the ultimate freedom to build a custom publication to suit your needs. Routes are rules that map URL patterns to your content and templates. &lt;/p&gt;&lt;p&gt;You may not want content tagged with &lt;code&gt;News&lt;/code&gt; to exist on: &lt;code&gt;example.com/tag/news&lt;/code&gt;. Instead, you want it to exist on &lt;code&gt;example.com/news&lt;/code&gt; .&lt;/p&gt;&lt;p&gt;In this case you can use dynamic routes to create customised collections of content on your site. It's also possible to use multiple templates in your theme to render each content type differently.&lt;/p&gt;&lt;p&gt;There are lots of use cases for dynamic routing with Ghost, here are a few common examples: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;Setting a custom home page with its own template&lt;/li&gt;&lt;li&gt;Having separate content hubs for blog and podcast, that render differently, and have custom RSS feeds to support two types of content&lt;/li&gt;&lt;li&gt;Creating a founders column as a unique view, by filtering content created by specific authors&lt;/li&gt;&lt;li&gt;Including dates in permalinks for your posts&lt;/li&gt;&lt;li&gt;Setting posts to have a URL relative to their primary tag like &lt;code&gt;example.com/europe/story-title/&lt;/code&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;em&gt;Dynamic routing can be configured in Ghost using &lt;a href="http://yaml.org/spec/1.2/spec.html" rel="noreferrer nofollow noopener"&gt;YAML&lt;/a&gt; files. Read our dynamic routing &lt;a href="https://ghost.org/docs/api/handlebars-themes/routing/"&gt;documentation&lt;/a&gt; for further details.&lt;/em&gt;&lt;/blockquote&gt;&lt;h2 id="next-apps-integrations"&gt;Next: Apps &amp;amp; Integrations&lt;/h2&gt;&lt;p&gt;Work with all your favourite apps and tools using our &lt;a href="http://localhost:2368/apps-integrations/"&gt;integrations&lt;/a&gt;, or create your own custom integrations with webhooks.&lt;/p&gt;</content:encoded></item><item><title>Apps &amp; integrations</title><description>Work with all your favourite apps and tools or create your own custom integrations using the Ghost API.</description><link>http://localhost:2368/apps-integrations/</link><guid isPermaLink="false">5fe959cf76d2db06a8acad0b</guid><category>Getting Started</category><dc:creator>Ghost</dc:creator><pubDate>Mon, 28 Dec 2020 04:06:40 GMT</pubDate><media:content url="https://static.ghost.org/v3.0.0/images/app-integrations.png" medium="image"/><content:encoded>&lt;h2 id="work-with-your-existing-tools"&gt;Work with your existing tools&lt;/h2&gt;&lt;img src="https://static.ghost.org/v3.0.0/images/app-integrations.png" alt="Apps &amp; integrations"&gt;&lt;p&gt;It's possible to connect your Ghost site to hundreds of the most popular apps and tools using integrations that take no more than a few minutes to setup.&lt;/p&gt;&lt;p&gt;Whether you need to automate workflows, connect your email list, build a community or embed products from your ecommerce store, our &lt;a href="https://ghost.org/integrations/"&gt;integrations library&lt;/a&gt; has got it all covered with hundreds of tutorials.&lt;/p&gt;&lt;figure class="kg-card kg-image-card kg-width-full"&gt;&lt;img src="https://static.ghost.org/v3.0.0/images/integrations-icons.png" class="kg-image" alt="Apps &amp; integrations"&gt;&lt;/figure&gt;&lt;h2 id="zapier"&gt;Zapier&lt;/h2&gt;&lt;p&gt;On top of this, you can connect your Ghost site to more than 1,000 external services using the official integration with &lt;a href="https://zapier.com"&gt;Zapier&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Zapier sets up automations with Triggers and Actions, which allows you to create and customise a wide range of connected applications.&lt;/p&gt;&lt;blockquote&gt;&lt;strong&gt;Example&lt;/strong&gt;: When someone new subscribes to a newsletter on a Ghost site (Trigger) then the contact information is automatically pushed into MailChimp (Action).&lt;/blockquote&gt;&lt;p&gt;&lt;strong&gt;Here are the most popular Ghost&amp;lt;&amp;gt;Zapier automation templates:&lt;/strong&gt; &lt;/p&gt;&lt;!--kg-card-begin: markdown--&gt;&lt;script src="https://zapier.com/apps/embed/widget.js?services=Ghost&amp;container=true&amp;limit=8"&gt;&lt;/script&gt;
-&lt;!--kg-card-end: markdown--&gt;&lt;h2 id="custom-integrations"&gt;Custom integrations&lt;/h2&gt;&lt;p&gt;At the heart of Ghost sits a robust JSON API – designed to create, manage and retrieve content with ease. &lt;/p&gt;&lt;p&gt;It's possible to create custom Ghost integrations with dedicated API keys and webhooks from the Integrations page within Ghost Admin. &lt;/p&gt;&lt;figure class="kg-card kg-image-card"&gt;&lt;img src="https://static.ghost.org/v3.0.0/images/integrations-and-webhooks-in-ghost.png" class="kg-image" alt="Apps &amp; integrations"&gt;&lt;/figure&gt;&lt;p&gt;Beyond that, the API allows you to build entirely custom publishing apps. You can send content from your favourite desktop editor, build a custom interface for handling editorial workflow or use Ghost as a full headless CMS with a custom front-end.&lt;/p&gt;&lt;p&gt;The Ghost API is &lt;a href="https://ghost.org/docs/api/"&gt;thoroughly documented&lt;/a&gt; and straightforward to work with for developers of almost any level. &lt;/p&gt;&lt;h2 id="final-step-themes"&gt;Final step: Themes&lt;/h2&gt;&lt;p&gt;Alright, on to the last post in our welcome-series! If you're curious about creating your own Ghost theme from scratch, &lt;a href="http://localhost:2368/themes/"&gt;find out how that works&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title>Creating a custom theme</title><description>Ghost comes with a beautiful default theme designed for publishers which can easily be adapted for most purposes, or you can build a custom theme to suit your needs.</description><link>http://localhost:2368/themes/</link><guid isPermaLink="false">5fe959cf76d2db06a8acad09</guid><category>Getting Started</category><dc:creator>Ghost</dc:creator><pubDate>Mon, 28 Dec 2020 04:06:39 GMT</pubDate><media:content url="https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png" medium="image"/><content:encoded>&lt;h2 id="ghost-themes"&gt;Ghost themes&lt;/h2&gt;&lt;img src="https://static.ghost.org/v3.0.0/images/creating-a-custom-theme.png" alt="Creating a custom theme"&gt;&lt;p&gt;Ghost comes with a default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes.&lt;/p&gt;&lt;p&gt;If you need something a little more customised, it's entirely possible to build on top of existing open source themes, or to build your own from scratch. Rather than giving you a few basic settings which act as a poor proxy for code, we just let you write code.&lt;/p&gt;&lt;h2 id="marketplace"&gt;Marketplace&lt;/h2&gt;&lt;p&gt;There are a huge range of both free and premium pre-built themes which you can download from the &lt;a href="https://ghost.org/marketplace/"&gt;Ghost Theme Marketplace&lt;/a&gt;:&lt;/p&gt;&lt;figure class="kg-card kg-image-card kg-card-hascaption"&gt;&lt;img src="https://static.ghost.org/v3.0.0/images/theme-marketplace.png" class="kg-image" alt="Creating a custom theme"&gt;&lt;figcaption&gt;Anyone can write a completely custom Ghost theme with some solid knowledge of HTML and CSS&lt;/figcaption&gt;&lt;/figure&gt;&lt;h2 id="theme-development"&gt;Theme development&lt;/h2&gt;&lt;p&gt;Ghost themes are written with a templating language called handlebars, which has a set of dynamic helpers to insert your data into template files. For example: &lt;code&gt;{{author.name}}&lt;/code&gt; outputs the name of the current author.&lt;/p&gt;&lt;p&gt;The best way to learn how to write your own Ghost theme is to have a look at &lt;a href="https://github.com/TryGhost/Casper"&gt;the source code for Casper&lt;/a&gt;, which is heavily commented and should give you a sense of how everything fits together.&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;default.hbs&lt;/code&gt; is the main template file, all contexts will load inside this file unless specifically told to use a different template.&lt;/li&gt;&lt;li&gt;&lt;code&gt;post.hbs&lt;/code&gt; is the file used in the context of viewing a post.&lt;/li&gt;&lt;li&gt;&lt;code&gt;index.hbs&lt;/code&gt; is the file used in the context of viewing the home page.&lt;/li&gt;&lt;li&gt;and so on&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;We've got &lt;a href="https://ghost.org/docs/api/handlebars-themes/"&gt;full and extensive theme documentation&lt;/a&gt; which outlines every template file, context and helper that you can use. You can also get started with our useful &lt;a href="https://github.com/TryGhost/Starter/"&gt;starter theme&lt;/a&gt;, which includes the most common foundations and components required to build your own theme.&lt;/p&gt;&lt;blockquote&gt;If you want to chat with other people making Ghost themes to get any advice or help, there's also a &lt;strong&gt;themes&lt;/strong&gt; section on our &lt;a href="https://forum.ghost.org/c/themes"&gt;public Ghost forum&lt;/a&gt;.&lt;/blockquote&gt;</content:encoded></item></channel></rss>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>矽谷吃翰</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><image><url>http://localhost:2368/favicon.png</url><title>矽谷吃翰</title><link>http://localhost:2368/</link></image><generator>Ghost 3.40</generator><lastBuildDate>Mon, 28 Dec 2020 09:18:01 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>tags</title><link>http://localhost:2368/tags/</link><guid isPermaLink="false">5fe98d4dc6768a5d72827734</guid><dc:creator>poioit</dc:creator><pubDate>Mon, 28 Dec 2020 07:46:30 GMT</pubDate><content:encoded/></item><item><title>Authors</title><description>一生懸命いっしょけんめい
+追求自我成長 認真過每一分鐘
+</description><link>http://localhost:2368/authors/</link><guid isPermaLink="false">5fe91ddd24c13cf9c52c0076</guid><dc:creator>poioit</dc:creator><pubDate>Sun, 27 Dec 2020 23:51:45 GMT</pubDate><media:content url="http://localhost:2368/content/images/2020/12/20190526_111545_HDR.jpg" medium="image"/><content:encoded/></item><item><title>React Native</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;ol&gt;
+&lt;li&gt;update ios/Podfile&lt;/li&gt;
+&lt;li&gt;reset cache&lt;br&gt;
+node node_modules/react-native/local-cli/cli.js start --reset-cache&lt;/li&gt;
+&lt;li&gt;get Googlefirebase api&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;經查跟PushNotification有關，需要手動完成Linking。&lt;br&gt;
+兩步解決此問題：&lt;br&gt;
+配置Linking Libraries:&lt;a href="https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking"&gt;https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking&lt;/a&gt;&lt;br&gt;
+配置PushNotificationIOS:&lt;br&gt;
+&lt;a href="https://facebook.github.io/react-native/docs/pushnotificationios.html"&gt;https://facebook.github.io/react-native/docs/pushnotificationios.html&lt;/a&gt;&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</description><link>http://localhost:2368/react-native/</link><guid isPermaLink="false">5b6865fe16209a6889db83ac</guid><category>React</category><dc:creator>poioit</dc:creator><pubDate>Mon, 06 Aug 2018 15:15:25 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;ol&gt;
+&lt;li&gt;update ios/Podfile&lt;/li&gt;
+&lt;li&gt;reset cache&lt;br&gt;
+node node_modules/react-native/local-cli/cli.js start --reset-cache&lt;/li&gt;
+&lt;li&gt;get Googlefirebase api&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;經查跟PushNotification有關，需要手動完成Linking。&lt;br&gt;
+兩步解決此問題：&lt;br&gt;
+配置Linking Libraries:&lt;a href="https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking"&gt;https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking&lt;/a&gt;&lt;br&gt;
+配置PushNotificationIOS:&lt;br&gt;
+&lt;a href="https://facebook.github.io/react-native/docs/pushnotificationios.html"&gt;https://facebook.github.io/react-native/docs/pushnotificationios.html&lt;/a&gt;&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>pod</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Besides no version, or a specific one, it is also possible to use logical operators:&lt;/p&gt;
+&lt;p&gt;'&amp;gt; 0.1' Any version higher than 0.1 0.1以上&lt;br&gt;
+'&amp;gt;= 0.1' Version 0.1 and any higher version 0.1以上，包括0.1&lt;br&gt;
+'&amp;lt; 0.1' Any version lower than&lt;/p&gt;</description><link>http://localhost:2368/pod/</link><guid isPermaLink="false">5b66cd8416209a6889db83a8</guid><dc:creator>poioit</dc:creator><pubDate>Sun, 05 Aug 2018 10:12:26 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Besides no version, or a specific one, it is also possible to use logical operators:&lt;/p&gt;
+&lt;p&gt;'&amp;gt; 0.1' Any version higher than 0.1 0.1以上&lt;br&gt;
+'&amp;gt;= 0.1' Version 0.1 and any higher version 0.1以上，包括0.1&lt;br&gt;
+'&amp;lt; 0.1' Any version lower than 0.1 0.1以下&lt;br&gt;
+'&amp;lt;= 0.1' Version 0.1 and any lower version 0.1以下，包括0.1&lt;br&gt;
+In addition to the logic operators CocoaPods has an optimisic operator ~&amp;gt;:&lt;/p&gt;
+&lt;p&gt;'~&amp;gt; 0.1.2' Version 0.1.2 and the versions up to 0.2, not including 0.2 and higher 0.2以下(不含0.2)，0.1.2以上（含0.1.2）&lt;br&gt;
+'~&amp;gt; 0.1' Version 0.1 and the versions up to 1.0, not including 1.0 and higher 1.0以下(不含1.0)，0.1以上（含0.1）&lt;br&gt;
+'~&amp;gt; 0' Version 0 and higher, this is basically the same as not having it. 0和以上，等于没有此约束&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Kaggle</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;ol&gt;
+&lt;li&gt;workon dl4cv&lt;/li&gt;
+&lt;li&gt;spyder3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!--kg-card-end: markdown--&gt;</description><link>http://localhost:2368/kaggle/</link><guid isPermaLink="false">5b608afd16209a6889db838c</guid><dc:creator>poioit</dc:creator><pubDate>Tue, 31 Jul 2018 16:15:34 GMT</pubDate><media:content url="http://localhost:2368/content/images/2020/12/IMG_5025-3.jpg" medium="image"/><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;ol&gt;
+&lt;li&gt;workon dl4cv&lt;/li&gt;
+&lt;li&gt;spyder3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Mac use NTFS</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;&lt;a href="https://www.howtogeek.com/236055/how-to-write-to-ntfs-drives-on-a-mac/"&gt;https://www.howtogeek.com/236055/how-to-write-to-ntfs-drives-on-a-mac/&lt;/a&gt;&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</description><link>http://localhost:2368/mac-use-ntfs/</link><guid isPermaLink="false">5b4f4f27da43232b17e34f82</guid><dc:creator>poioit</dc:creator><pubDate>Wed, 18 Jul 2018 14:31:28 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;&lt;a href="https://www.howtogeek.com/236055/how-to-write-to-ntfs-drives-on-a-mac/"&gt;https://www.howtogeek.com/236055/how-to-write-to-ntfs-drives-on-a-mac/&lt;/a&gt;&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>minikube</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;&lt;a href="https://kubernetes.io/docs/setup/minikube/#quickstart"&gt;https://kubernetes.io/docs/setup/minikube/#quickstart&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1.brew cask install minikube&lt;br&gt;
+2. poioitde-MacBook-Pro:~ poioit$ minikube version&lt;br&gt;
+minikube version: v0.28.1&lt;br&gt;
+3. curl -LO &lt;a href="https://storage.googleapis.com/kubernetes-release/release/$"&gt;https://storage.googleapis.com/kubernetes-release/release/$&lt;/a&gt;(curl -s &lt;a href="https://storage.googleapis.com/kubernetes-release/release/stable.txt"&gt;https://storage.googleapis.com/kubernetes-release/release/stable.txt&lt;/a&gt;)/bin/darwin/amd64/kubectl&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</description><link>http://localhost:2368/minikube/</link><guid isPermaLink="false">5b4f342bda43232b17e34f80</guid><dc:creator>poioit</dc:creator><pubDate>Wed, 18 Jul 2018 14:30:52 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;&lt;a href="https://kubernetes.io/docs/setup/minikube/#quickstart"&gt;https://kubernetes.io/docs/setup/minikube/#quickstart&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1.brew cask install minikube&lt;br&gt;
+2. poioitde-MacBook-Pro:~ poioit$ minikube version&lt;br&gt;
+minikube version: v0.28.1&lt;br&gt;
+3. curl -LO &lt;a href="https://storage.googleapis.com/kubernetes-release/release/$"&gt;https://storage.googleapis.com/kubernetes-release/release/$&lt;/a&gt;(curl -s &lt;a href="https://storage.googleapis.com/kubernetes-release/release/stable.txt"&gt;https://storage.googleapis.com/kubernetes-release/release/stable.txt&lt;/a&gt;)/bin/darwin/amd64/kubectl&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Javascript vs Python</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Javascript&lt;/th&gt;
+&lt;th&gt;Python&lt;/th&gt;
+&lt;th&gt;C++&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;scope&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sort&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;promise&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--kg-card-end: markdown--&gt;</description><link>http://localhost:2368/javascript-vs-python/</link><guid isPermaLink="false">5b3b9425da43232b17e34f70</guid><dc:creator>poioit</dc:creator><pubDate>Tue, 03 Jul 2018 15:33:37 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Javascript&lt;/th&gt;
+&lt;th&gt;Python&lt;/th&gt;
+&lt;th&gt;C++&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;scope&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sort&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;promise&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Puppeteer</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;this is google puppeteer for auto crawl the web&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</description><link>http://localhost:2368/untitled/</link><guid isPermaLink="false">5b36257dda43232b17e34f6c</guid><dc:creator>poioit</dc:creator><pubDate>Tue, 03 Jul 2018 15:19:51 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;this is google puppeteer for auto crawl the web&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Ghost</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Run on local environment&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ghost doctoer=&amp;gt; tell you where is the error&lt;/li&gt;
+&lt;li&gt;nvm list =&amp;gt; check node version&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Supported: ^6.9.0 || ^8.9.0&lt;br&gt;
+Installed: 9.3.0&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;nvm use v6.9.0&lt;/li&gt;
+&lt;li&gt;ghost start&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Upload to blog&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;buster generate&lt;/li&gt;
+&lt;li&gt;cd static&lt;/li&gt;
+&lt;li&gt;git add --all&lt;/li&gt;
+&lt;li&gt;git commit -m&lt;/li&gt;&lt;/ol&gt;</description><link>http://localhost:2368/ghost-post/</link><guid isPermaLink="false">5b302659da43232b17e34f58</guid><dc:creator>poioit</dc:creator><pubDate>Sun, 24 Jun 2018 23:18:09 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Run on local environment&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ghost doctoer=&amp;gt; tell you where is the error&lt;/li&gt;
+&lt;li&gt;nvm list =&amp;gt; check node version&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Supported: ^6.9.0 || ^8.9.0&lt;br&gt;
+Installed: 9.3.0&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;nvm use v6.9.0&lt;/li&gt;
+&lt;li&gt;ghost start&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Upload to blog&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;buster generate&lt;/li&gt;
+&lt;li&gt;cd static&lt;/li&gt;
+&lt;li&gt;git add --all&lt;/li&gt;
+&lt;li&gt;git commit -m &amp;quot;New Post&amp;quot;&lt;/li&gt;
+&lt;li&gt;git push -u origin master -f&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>build kernel on mac</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;If we need to build the kernel on mac.&lt;br&gt;
+we need some tool to compile the kernel&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;brew install libelf&lt;/li&gt;
+&lt;li&gt;wget &lt;a href="https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h"&gt;https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cp elf.h /usr/local/include/&lt;/li&gt;
+&lt;li&gt;wget &lt;a href="https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h"&gt;https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cp elftypes.&lt;/li&gt;&lt;/ol&gt;</description><link>http://localhost:2368/build-kernel-on-mac/</link><guid isPermaLink="false">5b23d786048e5ccb95db765c</guid><category>Kernel</category><dc:creator>poioit</dc:creator><pubDate>Fri, 15 Jun 2018 15:16:34 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;If we need to build the kernel on mac.&lt;br&gt;
+we need some tool to compile the kernel&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;brew install libelf&lt;/li&gt;
+&lt;li&gt;wget &lt;a href="https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h"&gt;https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cp elf.h /usr/local/include/&lt;/li&gt;
+&lt;li&gt;wget &lt;a href="https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h"&gt;https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cp elftypes.h /usr/local/include/&lt;/li&gt;
+&lt;li&gt;add the following code into elf.h&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class="language-language-clike"&gt;#define R_386_NONE 0
+#define R_386_32 1
+#define R_386_PC32 2
+#define R_ARM_NONE 0
+#define R_ARM_PC24 1
+#define R_ARM_ABS32 2
+#define R_MIPS_NONE 0
+#define R_MIPS_16 1
+#define R_MIPS_32 2
+#define R_MIPS_REL32 3
+#define R_MIPS_26 4
+#define R_MIPS_HI16 5
+#define R_MIPS_LO16 6
+#define R_IA64_IMM64 0x23 /* symbol + addend, mov imm64 */
+#define R_PPC_ADDR32 1 /* 32bit absolute address */
+#define R_PPC64_ADDR64 38 /* doubleword64 S + A */
+#define R_SH_DIR32 1
+#define R_SPARC_64 32 /* Direct 64 bit */
+#define R_X86_64_64 1 /* Direct 64 bit */
+#define R_390_32 4 /* Direct 32 bit. */
+#define R_390_64 22 /* Direct 64 bit. */
+#define R_MIPS_64 18
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start="7"&gt;
+&lt;li&gt;brew install gnu-sed --with-default-names&lt;/li&gt;
+&lt;li&gt;export PATH=&amp;quot;/usr/local/opt/gnu-sed/libexec/gnubin:$PATH&amp;quot;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;git fetch origin rpi-4.14.y:rpi-4.14.y&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Nginx</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Setup Nginx on mac os.&lt;br&gt;
+howto&lt;br&gt;
+github:&lt;br&gt;
+&lt;a href="https://github.com/nginx/nginx.git"&gt;https://github.com/nginx/nginx.git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;sudo /usr/local/bin/nginx&lt;br&gt;
+sudo /usr/local/bin/nginx -s stop&lt;/p&gt;
+&lt;p&gt;check service is running&lt;br&gt;
+ps aux | grep nginx&lt;br&gt;
+buster generate  --web-url=poioit.github.io&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</description><link>http://localhost:2368/nginx/</link><guid isPermaLink="false">5b1017a6048e5ccb95db763b</guid><category>Nginx</category><dc:creator>poioit</dc:creator><pubDate>Tue, 12 Jun 2018 15:24:30 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Setup Nginx on mac os.&lt;br&gt;
+howto&lt;br&gt;
+github:&lt;br&gt;
+&lt;a href="https://github.com/nginx/nginx.git"&gt;https://github.com/nginx/nginx.git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;sudo /usr/local/bin/nginx&lt;br&gt;
+sudo /usr/local/bin/nginx -s stop&lt;/p&gt;
+&lt;p&gt;check service is running&lt;br&gt;
+ps aux | grep nginx&lt;br&gt;
+buster generate  --web-url=poioit.github.io&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Welcome to Ghost</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Hey! Welcome to Ghost, it's great to have you :)&lt;/p&gt;
+&lt;p&gt;We know that first impressions are important, so we've populated your new site with some initial &lt;strong&gt;Getting Started&lt;/strong&gt; posts that will help you get familiar with everything in no time. This is the first one!&lt;/p&gt;
+&lt;h3 id="thereareafewthingsthatyoushouldknowupfront"&gt;There are a few things that&lt;/h3&gt;</description><link>http://localhost:2368/welcome/</link><guid isPermaLink="false">5b0c2e9c2ce18bc8a20237e9</guid><category>Getting Started</category><dc:creator>Ghost</dc:creator><pubDate>Mon, 28 May 2018 16:30:26 GMT</pubDate><media:content url="https://casper.ghost.org/v1.0.0/images/welcome.jpg" medium="image"/><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;img src="https://casper.ghost.org/v1.0.0/images/welcome.jpg" alt="Welcome to Ghost"&gt;&lt;p&gt;Hey! Welcome to Ghost, it's great to have you :)&lt;/p&gt;
+&lt;p&gt;We know that first impressions are important, so we've populated your new site with some initial &lt;strong&gt;Getting Started&lt;/strong&gt; posts that will help you get familiar with everything in no time. This is the first one!&lt;/p&gt;
+&lt;h3 id="thereareafewthingsthatyoushouldknowupfront"&gt;There are a few things that you should know up-front:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Ghost is designed for ambitious, professional publishers who want to actively build a business around their content. That's who it works best for. If you're using Ghost for some other purpose, that's fine too - but it might not be the best choice for you.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The entire platform can be modified and customized to suit your needs, which is very powerful, but doing so &lt;strong&gt;does&lt;/strong&gt; require some knowledge of code. Ghost is not necessarily a good platform for beginners or people who just want a simple personal blog.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For the best experience we recommend downloading the &lt;a href="https://ghost.org/downloads/"&gt;Ghost Desktop App&lt;/a&gt; for your computer, which is the best way to access your Ghost site on a desktop device.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Ghost is made by an independent non-profit organisation called the Ghost Foundation. We are 100% self funded by revenue from our &lt;a href="https://ghost.org/pricing"&gt;Ghost(Pro)&lt;/a&gt; service, and every penny we make is re-invested into funding further development of free, open source technology for modern journalism.&lt;/p&gt;
+&lt;p&gt;The main thing you'll want to read about next is probably: &lt;a href="http://localhost:2368/the-editor/"&gt;the Ghost editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you're done reading, you can simply delete the default &lt;strong&gt;Ghost&lt;/strong&gt; user from your team to remove all of these introductory posts!&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Using the Ghost editor</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Ghost uses a language called &lt;strong&gt;Markdown&lt;/strong&gt; to format text.&lt;/p&gt;
+&lt;p&gt;When you go to edit a post and see special characters and colours intertwined between the words, those are Markdown shortcuts which tell Ghost what to do with the words in your document. The biggest benefit of Markdown is that you&lt;/p&gt;</description><link>http://localhost:2368/the-editor/</link><guid isPermaLink="false">5b0c2e9c2ce18bc8a20237e7</guid><category>Getting Started</category><dc:creator>Ghost</dc:creator><pubDate>Mon, 28 May 2018 16:30:25 GMT</pubDate><media:content url="https://casper.ghost.org/v1.0.0/images/writing.jpg" medium="image"/><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;img src="https://casper.ghost.org/v1.0.0/images/writing.jpg" alt="Using the Ghost editor"&gt;&lt;p&gt;Ghost uses a language called &lt;strong&gt;Markdown&lt;/strong&gt; to format text.&lt;/p&gt;
+&lt;p&gt;When you go to edit a post and see special characters and colours intertwined between the words, those are Markdown shortcuts which tell Ghost what to do with the words in your document. The biggest benefit of Markdown is that you can quickly apply formatting as you type, without needing to pause.&lt;/p&gt;
+&lt;p&gt;At the bottom of the editor, you'll find a toolbar with basic formatting options to help you get started as easily as possible. You'll also notice that there's a &lt;strong&gt;?&lt;/strong&gt; icon, which contains more advanced shortcuts.&lt;/p&gt;
+&lt;p&gt;For now, though, let's run you through some of the basics. You'll want to make sure you're editing this post in order to see all the Markdown we've used.&lt;/p&gt;
+&lt;h2 id="formattingtext"&gt;Formatting text&lt;/h2&gt;
+&lt;p&gt;The most common shortcuts are of course, &lt;strong&gt;bold&lt;/strong&gt; text, &lt;em&gt;italic&lt;/em&gt; text, and &lt;a href="https://example.com"&gt;hyperlinks&lt;/a&gt;. These generally make up the bulk of any document. You can type the characters out, but you can also use keyboard shortcuts.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CMD/Ctrl + B&lt;/code&gt; for Bold&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CMD/Ctrl + I&lt;/code&gt; for Italic&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CMD/Ctrl + K&lt;/code&gt; for a Link&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CMD/Ctrl + H&lt;/code&gt; for a Heading (Press multiple times for h2/h3/h4/etc)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With just a couple of extra characters here and there, you're well on your way to creating a beautifully formatted story.&lt;/p&gt;
+&lt;h2 id="insertingimages"&gt;Inserting images&lt;/h2&gt;
+&lt;p&gt;Images in Markdown look just the same as links, except they're prefixed with an exclamation mark, like this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;![Image description](/path/to/image.jpg)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://casper.ghost.org/v1.0.0/images/computer.jpg" alt="Using the Ghost editor"&gt;&lt;/p&gt;
+&lt;p&gt;Most Markdown editors don't make you type this out, though. In Ghost you can click on the image icon in the toolbar at the bottom of the editor, or you can just click and drag an image from your desktop directly into the editor. Both will upload the image for you and generate the appropriate Markdown.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Important Note:&lt;/strong&gt; Ghost does not currently have automatic image resizing, so it's always a good idea to make sure your images aren't gigantic files &lt;strong&gt;before&lt;/strong&gt; uploading them to Ghost.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="makinglists"&gt;Making lists&lt;/h2&gt;
+&lt;p&gt;Lists in HTML are a formatting nightmare, but in Markdown they become an absolute breeze with just a couple of characters and a bit of smart automation. For numbered lists, just write out the numbers. For bullet lists, just use &lt;code&gt;*&lt;/code&gt; or &lt;code&gt;-&lt;/code&gt; or &lt;code&gt;+&lt;/code&gt;. Like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Crack the eggs over a bowl&lt;/li&gt;
+&lt;li&gt;Whisk them together&lt;/li&gt;
+&lt;li&gt;Make an omelette&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Remember to buy milk&lt;/li&gt;
+&lt;li&gt;Feed the cat&lt;/li&gt;
+&lt;li&gt;Come up with idea for next story&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="addingquotes"&gt;Adding quotes&lt;/h2&gt;
+&lt;p&gt;When you want to pull out a particularly good excerpt in the middle of a piece, you can use &lt;code&gt;&amp;gt;&lt;/code&gt; at the beginning of a paragraph to turn it into a Blockquote. You might've seen this formatting before in email clients.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A well placed quote guides a reader through a story, helping them to understand the most important points being made&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;All themes handles blockquotes slightly differently. Sometimes they'll look better kept shorter, while other times you can quote fairly hefty amounts of text and get away with it. Generally, the safest option is to use blockquotes sparingly.&lt;/p&gt;
+&lt;h2 id="dividingthingsup"&gt;Dividing things up&lt;/h2&gt;
+&lt;p&gt;If you're writing a piece in parts and you just feel like you need to divide a couple of sections distinctly from each other, a horizontal rule might be just what you need. Dropping &lt;code&gt;---&lt;/code&gt; on a new line will create a sleek divider, anywhere you want it.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This should get you going with the vast majority of what you need to do in the editor, but if you're still curious about more advanced tips then check out the &lt;a href="http://localhost:2368/advanced-markdown/"&gt;Advanced Markdown Guide&lt;/a&gt; - or if you'd rather learn about how Ghost taxononomies work, we've got a overview of &lt;a href="http://localhost:2368/using-tags/"&gt;how to use Ghost tags&lt;/a&gt;.&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Organising your content with tags</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Ghost has a single, powerful organisational taxonomy, called tags.&lt;/p&gt;
+&lt;p&gt;It doesn't matter whether you want to call them categories, tags, boxes, or anything else. You can think of Ghost tags a lot like Gmail labels. By tagging posts with one or more keyword, you can organise articles into buckets of&lt;/p&gt;</description><link>http://localhost:2368/using-tags/</link><guid isPermaLink="false">5b0c2e9c2ce18bc8a20237e5</guid><category>Getting Started</category><dc:creator>Ghost</dc:creator><pubDate>Mon, 28 May 2018 16:30:24 GMT</pubDate><media:content url="https://casper.ghost.org/v1.0.0/images/tags.jpg" medium="image"/><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;img src="https://casper.ghost.org/v1.0.0/images/tags.jpg" alt="Organising your content with tags"&gt;&lt;p&gt;Ghost has a single, powerful organisational taxonomy, called tags.&lt;/p&gt;
+&lt;p&gt;It doesn't matter whether you want to call them categories, tags, boxes, or anything else. You can think of Ghost tags a lot like Gmail labels. By tagging posts with one or more keyword, you can organise articles into buckets of related content.&lt;/p&gt;
+&lt;h2 id="basictagging"&gt;Basic tagging&lt;/h2&gt;
+&lt;p&gt;When you write a post, you can assign tags to help differentiate between categories of content. For example, you might tag some posts with &lt;code&gt;News&lt;/code&gt; and other posts with &lt;code&gt;Cycling&lt;/code&gt;, which would create two distinct categories of content listed on &lt;code&gt;/tag/news/&lt;/code&gt; and &lt;code&gt;/tag/cycling/&lt;/code&gt;, respectively.&lt;/p&gt;
+&lt;p&gt;If you tag a post with both &lt;code&gt;News&lt;/code&gt; &lt;em&gt;and&lt;/em&gt; &lt;code&gt;Cycling&lt;/code&gt; - then it appears in both sections.&lt;/p&gt;
+&lt;p&gt;Tag archives are like dedicated home-pages for each category of content that you have. They have their own pages, their own RSS feeds, and can support their own cover images and meta data.&lt;/p&gt;
+&lt;h2 id="theprimarytag"&gt;The primary tag&lt;/h2&gt;
+&lt;p&gt;Inside the Ghost editor, you can drag and drop tags into a specific order. The first tag in the list is always given the most importance, and some themes will only display the primary tag (the first tag in the list) by default. So you can add the most important tag which you want to show up in your theme, but also add a bunch of related tags which are less important.&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;&lt;strong&gt;News&lt;/strong&gt;, Cycling, Bart Stevens, Extreme Sports&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;In this example, &lt;strong&gt;News&lt;/strong&gt; is the primary tag which will be displayed by the theme, but the post will also still receive all the other tags, and show up in their respective archives.&lt;/p&gt;
+&lt;h2 id="privatetags"&gt;Private tags&lt;/h2&gt;
+&lt;p&gt;Sometimes you may want to assign a post a specific tag, but you don't necessarily want that tag appearing in the theme or creating an archive page. In Ghost, hashtags are private and can be used for special styling.&lt;/p&gt;
+&lt;p&gt;For example, if you sometimes publish posts with video content - you might want your theme to adapt and get rid of the sidebar for these posts, to give more space for an embedded video to fill the screen. In this case, you could use private tags to tell your theme what to do.&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;&lt;strong&gt;News&lt;/strong&gt;, Cycling, #video&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;Here, the theme would assign the post publicly displayed tags of &lt;code&gt;News&lt;/code&gt;, and &lt;code&gt;Cycling&lt;/code&gt; - but it would also keep a private record of the post being tagged with &lt;code&gt;#video&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In your theme, you could then look for private tags conditionally and give them special formatting:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{#post}}
+    {{#has tag=&amp;quot;#video&amp;quot;}}
+        ...markup for a nice big video post layout...
+    {{else}}
+        ...regular markup for a post...
+    {{/has}}
+{{/post}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can find documentation for theme development techniques like this and many more over on Ghost's extensive &lt;a href="https://themes.ghost.org/"&gt;theme documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item></channel></rss>
