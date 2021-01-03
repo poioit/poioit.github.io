@@ -1,9 +1,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-
     <title>Using the Ghost editor</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
     <link rel="icon" href="../../favicon.png" type="image/png">
     <link rel="canonical" href="../index.html">
@@ -73,595 +74,60 @@
     <meta name="generator" content="Ghost 3.40">
     <link rel="alternate" type="application/rss+xml" title="矽谷吃翰" href="../../rss/index.html">
 
-    <style amp-custom>
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+    <link href="https://fonts.googleapis.com/css?family=Domine%7CRubik:400,500,700&amp;display=swap" rel="stylesheet">
 
-    html {
-        overflow-x: hidden;
-        overflow-y: scroll;
-        font-size: 62.5%;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
 
-    body {
-        min-height: 100vh;
-        margin: 0;
-        padding: 0;
-        color: #3a4145;
-        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
-        font-size: 1.7rem;
-        line-height: 1.55em;
-        font-weight: 400;
-        font-style: normal;
-        background: #fff;
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-
-    p,
-    ul,
-    ol,
-    li,
-    dl,
-    dd,
-    hr,
-    pre,
-    form,
-    table,
-    video,
-    figure,
-    figcaption,
-    blockquote {
-        margin: 0;
-        padding: 0;
-    }
-
-    ul[class],
-    ol[class] {
-        padding: 0;
-        list-style: none;
-    }
-
-    img {
-        display: block;
-        max-width: 100%;
-    }
-
-    input,
-    button,
-    select,
-    textarea {
-        font: inherit;
-        -webkit-appearance: none;
-    }
-
-    fieldset {
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
-
-    label {
-        display: block;
-        font-size: 0.9em;
-        font-weight: 700;
-    }
-
-    hr {
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 1px;
-        border: 0;
-        border-top: 1px solid currentcolor;
-        opacity: 0.1;
-    }
-
-    ::selection {
-        text-shadow: none;
-        background: #cbeafb;
-    }
-
-    mark {
-        background-color: #fdffb6;
-    }
-
-    small {
-        font-size: 80%;
-    }
-
-    sub,
-    sup {
-        position: relative;
-        font-size: 75%;
-        line-height: 0;
-        vertical-align: baseline;
-    }
-    sup {
-        top: -0.5em;
-    }
-    sub {
-        bottom: -0.25em;
-    }
-
-    ul li + li {
-        margin-top: 0.6em;
-    }
-
-    a {
-        color: #1292EE;
-        text-decoration-skip-ink: auto;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin: 0;
-        font-weight: 700;
-        color: #121212;
-        line-height: 1.4em;
-    }
-
-    h1 {
-        font-size: 3.4rem;
-        line-height: 1.1em;
-    }
-
-    h2 {
-        font-size: 2.4rem;
-        line-height: 1.2em;
-    }
-
-    h3 {
-        font-size: 1.8rem;
-    }
-
-    h4 {
-        font-size: 1.7rem;
-    }
-
-    h5 {
-        font-size: 1.6rem;
-    }
-
-    h6 {
-        font-size: 1.6rem;
-    }
-
-    amp-img {
-        height: 100%;
-        width: 100%;
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    amp-img img {
-        object-fit: cover;
-    }
-
-    .page-header {
-        padding: 50px 5vmin 30px;
-        text-align: center;
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-
-    .page-header a {
-        color: #121212;
-        font-weight: 700;
-        text-decoration: none;
-        font-size: 1.6rem;
-        letter-spacing: -0.1px;
-    }
-
-    .post {
-        max-width: 680px;
-        margin: 0 auto;
-    }
-
-    .post-header {
-        margin: 0 5vmin 5vmin;
-        text-align: center;
-    }
-
-    .post-meta {
-        margin: 1rem 0 0 0;
-        text-transform: uppercase;
-        color: #738a94;
-        font-weight: 500;
-        font-size: 1.3rem;
-    }
-
-    .post-image {
-        margin: 0 0 5vmin;
-    }
-
-    .post-image img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .post-content {
-        padding: 0 5vmin;
-    }
-
-    .post-content > * + * {
-        margin-top: 1.5em;
-    }
-
-    .post-content [id]:not(:first-child) {
-        margin: 2em 0 0;
-    }
-
-    .post-content > [id] + * {
-        margin-top: 1rem;
-    }
-
-    .post-content [id] + .kg-card,
-    .post-content blockquote + .kg-card {
-        margin-top: 40px;
-    }
-
-    .post-content > ul,
-    .post-content > ol,
-    .post-content > dl {
-        padding-left: 1.9em;
-    }
-
-    .post-content hr {
-        margin-top: 40px;
-    }
-
-    .post .post-content hr + * {
-        margin-top: 40px;
-    }
-
-    .post-content amp-img {
-        background-color: #f8f8f8;
-    }
-
-    .post-content blockquote {
-        position: relative;
-        font-style: italic;
-    }
-
-    .post-content blockquote::before {
-        content: "";
-        position: absolute;
-        left: -1.5em;
-        top: 0;
-        bottom: 0;
-        width: 0.3rem;
-        background: #000;
-    }
-
-    .post-content :not(.kg-card):not([id]) + .kg-card {
-        margin-top: 40px;
-    }
-
-    .post-content .kg-card + :not(.kg-card) {
-        margin-top: 40px;
-    }
-
-    .kg-card figcaption {
-        padding: 1.5rem 1.5rem 0;
-        text-align: center;
-        font-weight: 500;
-        font-size: 1.3rem;
-        line-height: 1.4em;
-        opacity: 0.6;
-    }
-
-    .kg-card figcaption strong {
-        color: rgba(0,0,0,0.8);
-    }
-
-    .post-content :not(pre) code {
-        vertical-align: middle;
-        padding: 0.15em 0.4em 0.15em;
-        border: #e1eaef 1px solid;
-        font-weight: 400;
-        font-size: 0.9em;
-        line-height: 1em;
-        color: #dc0050;
-        background: #f0f6f9;
-        border-radius: 0.25em;
-    }
-
-    .post-content > pre {
-        overflow: scroll;
-        padding: 16px 20px;
-        color: #fff;
-        background: #1F2428;
-        border-radius: 5px;
-        box-shadow: 0 2px 6px -2px rgba(0,0,0,.1), 0 0 1px rgba(0,0,0,.4);
-    }
-
-    .kg-embed-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .kg-image-card img {
-        margin: auto;
-    }
-
-    .kg-gallery-card + .kg-gallery-card {
-        margin-top: 0.75em;
-    }
-
-    .kg-gallery-container {
-        position: relative;
-    }
-
-    .kg-gallery-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .kg-gallery-image {
-        width: 100%;
-        height: 100%;
-    }
-
-    .kg-gallery-row:not(:first-of-type) {
-        margin: 0.75em 0 0 0;
-    }
-
-    .kg-gallery-image:not(:first-of-type) {
-        margin: 0 0 0 0.75em;
-    }
-
-    .kg-bookmark-card,
-    .kg-bookmark-publisher {
-        position: relative;
-    }
-
-    .kg-bookmark-container,
-    .kg-bookmark-container:hover {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        color: currentColor;
-        background: rgba(255,255,255,0.6);
-        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
-        text-decoration: none;
-        border-radius: 5px;
-        box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.4);
-        overflow: hidden;
-    }
-
-    .kg-bookmark-content {
-        flex-basis: 0;
-        flex-grow: 999;
-        padding: 20px;
-        order: 1;
-    }
-
-    .kg-bookmark-title {
-        font-weight: 600;
-        font-size: 1.5rem;
-        line-height: 1.3em;
-    }
-
-    .kg-bookmark-description {
-        display: -webkit-box;
-        max-height: 45px;
-        margin: 0.5em 0 0 0;
-        font-size: 1.4rem;
-        line-height: 1.55em;
-        overflow: hidden;
-        opacity: 0.8;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-    }
-
-    .kg-bookmark-metadata {
-        margin-top: 20px;
-    }
-
-    .kg-bookmark-metadata {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 1.3rem;
-        line-height: 1.3em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .kg-bookmark-description {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-    }
-
-    .kg-bookmark-metadata amp-img {
-        width: 18px;
-        height: 18px;
-        max-width: 18px;
-        max-height: 18px;
-        margin-right: 10px;
-    }
-
-    .kg-bookmark-thumbnail {
-        display: flex;
-        flex-basis: 20rem;
-        flex-grow: 1;
-        justify-content: flex-end;
-    }
-
-    .kg-bookmark-thumbnail amp-img {
-        max-height: 200px;
-    }
-
-    .kg-bookmark-author {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-
-    .kg-bookmark-publisher::before {
-        content: "•";
-        margin: 0 .5em;
-    }
-
-    .kg-width-full.kg-card-hascaption {
-        display: grid;
-        grid-template-columns: inherit;
-    }
-
-    .post-content table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    .post-content th {
-        padding: 0.5em 0.8em;
-        text-align: left;
-        font-size: .75em;
-        text-transform: uppercase;
-    }
-
-    .post-content td {
-        padding: 0.4em 0.7em;
-    }
-
-    .post-content tbody tr:nth-child(2n + 1) {
-        background-color: rgba(0,0,0,0.1);
-        padding: 1px;
-    }
-
-    .post-content tbody tr:nth-child(2n + 2) td:last-child {
-        box-shadow:
-            inset 1px 0 rgba(0,0,0,0.1),
-            inset -1px 0 rgba(0,0,0,0.1);
-    }
-
-    .post-content tbody tr:nth-child(2n + 2) td {
-        box-shadow: inset 1px 0 rgba(0,0,0,0.1);
-    }
-
-    .post-content tbody tr:last-child {
-        border-bottom: 1px solid rgba(0,0,0,.1);
-    }
-
-    .page-footer {
-        padding: 60px 5vmin;
-        margin: 60px auto 0;
-        text-align: center;
-        background-color: #f8f8f8;
-    }
-
-    .page-footer h3 {
-        margin: 0.5rem 0 0 0;
-    }
-
-    .page-footer p {
-        max-width: 500px;
-        margin: 1rem auto 1.5rem;
-        font-size: 1.7rem;
-        line-height: 1.5em;
-        color: rgba(0,0,0,0.6)
-    }
-
-    .powered {
-        display: inline-flex;
-        align-items: center;
-        margin: 30px 0 0;
-        padding: 6px 9px 6px 6px;
-        border: rgba(0,0,0,0.1) 1px solid;
-        font-size: 12px;
-        line-height: 12px;
-        letter-spacing: -0.2px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-        font-weight: 500;
-        color: #222;
-        text-decoration: none;
-        background: #fff;
-        border-radius: 6px;
-    }
-
-    .powered svg {
-        height: 16px;
-        width: 16px;
-        margin: 0 6px 0 0;
-    }
-
-    @media (max-width: 600px) {
-        body {
-            font-size: 1.6rem;
-        }
-        h1 {
-            font-size: 3rem;
-        }
-
-        h2 {
-            font-size: 2.2rem;
-        }
-    }
-
-    @media (max-width: 400px) {
-        h1 {
-            font-size: 2.6rem;
-            line-height: 1.15em;
-        }
-        h2 {
-            font-size: 2rem;
-            line-height: 1.2em;
-        }
-        h3 {
-            font-size: 1.7rem;
-        }
-    }
-    </style>
+    <style amp-custom>.u-bgColor{background-color:#161D25}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}.kg-bookmark-container,body,figcaption,h1,h2,h3,h4,h5,h6{font-family:Rubik,Whitney SSm A,Whitney SSm B,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}.article-excerpt{font-family:Domine,Mercury SSm A,Mercury SSm B,Georgia,serif}.u-flexCenter{-webkit-box-align:center;align-items:center;display:-webkit-box;display:flex}.u-block{display:block}.u-relative{position:relative}.u-overflowHidden{overflow:hidden}.u-fontSizeSmaller{font-size:.875rem}.u-flex1{-webkit-box-flex:1;flex:1 1 auto}.u-absolute{position:absolute}.u-textCenter{text-align:center}.u-marginTop30{margin-top:30px}.u-container{margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px}*,:after,:before{box-sizing:border-box}body{font-size:1rem;font-style:normal;font-weight:400;letter-spacing:0;line-height:1.5em;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;color:#212529}a{color:#00469b;text-decoration:none;word-break:break-word}a:active,a:hover{outline:0}blockquote{border-left:4px solid #212529;font-size:1.125rem;font-style:italic;margin-left:-5px;margin-right:0;padding-bottom:2px;padding-left:20px}figure{margin:0;padding:0}img{-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center}figcaption{color:#6c757d;display:block;font-size:.875rem;font-style:normal;font-weight:400;margin-top:10px;text-align:center;width:100%}h1,h2,h3,h4,h5,h6{color:#111;font-style:normal;font-weight:700;line-height:1.2;margin:25px 0 0;word-break:break-word}h1{font-size:2rem}h2{font-size:1.75rem}h3{font-size:1.5rem}h4{font-size:1.375rem}h5{font-size:1.25rem}h6{font-size:1.125rem}strong{font-weight:700}p{margin:20px 0 0}hr{box-sizing:content-box;height:0;margin:1rem 0;overflow:visible;border:0;border-top:1px solid rgba(0,0,0,.1)}mark{background-color:transparent;background-image:linear-gradient(180deg,#d7fdd3,#d7fdd3);color:rgba(0,0,0,.8)}code,pre{font-family:Menlo,Courier,monospace;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}p code{border-radius:2px;padding:1px 6px}p code,pre{background:#2a3644;color:#e5eff5;font-size:.875rem}pre{overflow-x:auto;margin:0;padding:20px;border:none;line-height:1.6em}pre code{padding:0;background:transparent}svg{width:100%;height:100%}svg:not(:root){overflow:hidden}table{border-collapse:collapse;border-spacing:0;display:inline-block;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size:1rem;line-height:1.5;margin:20px 0 0;max-width:100%;overflow-x:auto;vertical-align:top;white-space:nowrap;width:auto;-webkit-overflow-scrolling:touch}table td,table th{padding:6px 13px;border:1px solid #dfe2e5}table tr:nth-child(2n){background-color:#f6f8fa}table th{letter-spacing:.0125rem;text-transform:uppercase;font-weight:500}.header{position:relative;width:100%;height:50px;line-height:1}.logo-link{color:#fff;font-size:1.5rem;font-weight:500}.social-media a{background:#212529;border-radius:4px;color:#fff;display:inline-block;height:36px;margin:0 2px;padding:8px;vertical-align:middle;width:36px}.social-media svg{fill:#fff;stroke:none}.sidebar{width:280px;background:#fff}.sidebar ul{list-style:none;list-style-image:none;margin:18px 0 20px;padding:0}.sidebar ul li a{padding:6px 20px;font-weight:500;font-size:1rem;display:block}.sidebar .social-media{padding:20px;border-top:1px solid #ddd}.close-sidebar{height:50px;font-size:1.5625rem;line-height:3.125rem;text-align:right;padding-right:20px;color:#fff}.hamburgermenu{background-color:transparent;border:none;padding:0;height:48px;position:relative;-webkit-transition:-webkit-transform .4s;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s;width:48px;margin-right:-15px}.hamburgermenu span{background-color:#fff;display:block;height:2px;left:14px;margin-top:-1px;position:absolute;top:50%;width:20px}.hamburgermenu span:first-child{-webkit-transform:translateY(-6px);transform:translateY(-6px)}.hamburgermenu span:last-child{-webkit-transform:translateY(6px);transform:translateY(6px)}.main{max-width:500px;margin:0 auto}.article{padding-top:25px}.article-title{margin-top:0}.article-excerpt{margin-bottom:20px;margin-top:15px;color:#6c757d;font-size:1.25rem;line-height:1.4}.article-meta{color:#6c757d;margin:15px 0;font-size:.875rem}.article-body{font-family:Domine,Mercury SSm A,Mercury SSm B,Georgia,serif;line-height:1.7em;font-size:1.125rem;padding:20px 1rem}.article-body>*{margin-bottom:28px}.article-body a:not(.kg-bookmark-container){word-break:break-word;text-decoration:underline}.article-body ol,.article-body ul{padding-left:20px}.article-body ol li,.article-body ul li{margin-bottom:5px}.button--tags{border-radius:3px;color:#212529;display:inline-block;font-size:.875rem;font-weight:500;height:37px;line-height:2.1875rem;margin:0 8px 8px 0;padding:0 10px;border:2px solid #212529}.button--tags:before{content:"#"}.share-title{display:block;margin-bottom:8px}amp-social-share.custom-style{background-color:teal;background-image:url(https://raw.githubusercontent.com/google/material-design-icons/master/social/1x_web/ic_share_white_48dp.png);background-repeat:no-repeat;background-position:50%;background-size:contain}amp-social-share.rounded{border-radius:10%;background-size:85%}.related{padding-top:40px;padding-bottom:20px;margin-top:20px;background:#efefef}.related-title{border-bottom:1px solid rgba(0,0,0,.15);padding-bottom:15px;margin-bottom:30px;color:#212529;font-weight:500;font-size:1.25rem}.story-border{border-left:3px solid #cc116e;bottom:0;color:rgba(0,0,0,.2);font-size:2.25rem;font-weight:700;left:0;padding:15px 10px 10px;top:0;-webkit-text-fill-color:transparent;-webkit-text-stroke-width:1.4px;-webkit-text-stroke-color:#888}.story:nth-child(3n) .story-border{border-color:#f59e00}.story:nth-child(3n+2) .story-border{border-color:#26a8ed}.story-link{background-color:#fff;border-bottom:1px solid #e2e0e0;box-shadow:0 1px 7px rgba(0,0,0,.05);min-height:50px;padding:15px 15px 15px 55px}.story-title{color:#212529;line-height:1.2;font-size:1.0625rem;font-weight:500;margin:0}.kg-bookmark-container{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;border:1px solid rgba(0,0,0,.1)}.kg-bookmark-content{padding:20px;-webkit-box-ordinal-group:2;order:1}.kg-bookmark-title{font-weight:500;line-height:1.2;font-size:1.125rem}.kg-bookmark-description{color:#6c757d;line-height:1.4;margin-top:10px;font-size:.875rem}.kg-bookmark-metadata{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;font-size:.875rem;margin-top:10px}.kg-bookmark-icon{margin-right:5px}.kg-bookmark-author:after{content:"•";margin:0 6px}.footer{background-color:#efefef;color:rgba(0,0,0,.44);padding-top:20px;font-size:.9375rem;padding-bottom:45px}</style>
 
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 
     
-
 </head>
-
 <body class="amp-template">
-    <header class="page-header">
-        <a href="../../">
-                <amp-img class="site-icon" src="http://localhost:2368/content/images/2020/12/selfie-icon-3.png" width="50" height="50" layout="fixed"></amp-img>
-        </a>
+    <header class="header u-bgColor u-flexCenter u-container">
+    <div class="u-flex1">
+
+
+
+        <a href="../../" class="logo-link">矽谷吃翰</a>
+    </div>
+
+    <button class="hamburgermenu" on="tap:sidenav.open" tabindex="0"><span></span><span></span><span></span></button>
+
+</header>
+
+    <main class="main">
+        
+<article class="article">
+    <header class="article-header u-container">
+        <h1 class="article-title">Using the Ghost editor</h1>
+
+        
+
+        <hr>
+
+        <div class="article-meta">
+            <span class="author-name">By <a href="../../author/ghost/">Ghost</a></span>
+
+            <span class="timestamp">
+                <time class="datetime" datetime="2018-05-28">3 years ago</time>
+            </span>
+
+            
+                <span>in</span>
+                <span class="categories"><a href="../../tag/getting-started/" title="Getting Started">Getting Started</a></span>
+            
+        </div>
     </header>
 
-    <main class="content" role="main">
-        <article class="post">
+        <figure class="article-image u-block u-marginTop30">
+            <amp-img src="https://casper.ghost.org/v1.0.0/images/writing.jpg" width="600" height="350" layout="responsive" alt="Using the Ghost editor"></amp-img>
+        </figure>
 
-            <header class="post-header">
-                <h1 class="post-title">Using the Ghost editor</h1>
-                <section class="post-meta">
-                    Ghost -
-                    <time class="post-date" datetime="2018-05-28">28 May 2018</time>
-                </section>
-            </header>
-            <figure class="post-image">
-                <amp-img src="https://casper.ghost.org/v1.0.0/images/writing.jpg" width="600" height="340" layout="responsive"></amp-img>
-            </figure>
-            <section class="post-content">
-
-                <p>Ghost uses a language called <strong>Markdown</strong> to format text.</p>
+    <div class="article-body u-container"> <p>Ghost uses a language called <strong>Markdown</strong> to format text.</p>
 <p>When you go to edit a post and see special characters and colours intertwined between the words, those are Markdown shortcuts which tell Ghost what to do with the words in your document. The biggest benefit of Markdown is that you can quickly apply formatting as you type, without needing to pause.</p>
 <p>At the bottom of the editor, you'll find a toolbar with basic formatting options to help you get started as easily as possible. You'll also notice that there's a <strong>?</strong> icon, which contains more advanced shortcuts.</p>
 <p>For now, though, let's run you through some of the basics. You'll want to make sure you're editing this post in order to see all the Markdown we've used.</p>
@@ -703,18 +169,90 @@
 <p>If you're writing a piece in parts and you just feel like you need to divide a couple of sections distinctly from each other, a horizontal rule might be just what you need. Dropping <code>---</code> on a new line will create a sleek divider, anywhere you want it.</p>
 <hr>
 <p>This should get you going with the vast majority of what you need to do in the editor, but if you're still curious about more advanced tips then check out the <a href="../../advanced-markdown/">Advanced Markdown Guide</a> - or if you'd rather learn about how Ghost taxononomies work, we've got a overview of <a href="../../using-tags/">how to use Ghost tags</a>.</p>
+ </div>
 
+        <div class="article-tags u-container u-marginTop30">
+            <span class="share-title">標籤:</span>
+                <a href="../../tag/getting-started/" title="Getting Started" class="button--tags">Getting Started</a>
+        </div>
 
-            </section>
-
-        </article>
-    </main>
-    <footer class="page-footer">
-            <amp-img class="site-icon" src="http://localhost:2368/content/images/2020/12/selfie-icon-3.png" width="50" height="50" layout="fixed"></amp-img>
-        <h3>矽谷吃翰</h3>
-            <p>Thoughts, stories and ideas.</p>
-        <p><a href="../../">Read more posts →</a></p>
-        <a class="powered" href="https://ghost.org" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 156 156"><g fill="none" fill-rule="evenodd"><rect fill="#15212B" width="156" height="156" rx="27"></rect><g transform="translate(36 36)" fill="#F6F8FA"><path d="M0 71.007A4.004 4.004 0 014 67h26a4 4 0 014 4.007v8.986A4.004 4.004 0 0130 84H4a4 4 0 01-4-4.007v-8.986zM50 71.007A4.004 4.004 0 0154 67h26a4 4 0 014 4.007v8.986A4.004 4.004 0 0180 84H54a4 4 0 01-4-4.007v-8.986z"></path><rect y="34" width="84" height="17" rx="4"></rect><path d="M0 4.007A4.007 4.007 0 014.007 0h41.986A4.003 4.003 0 0150 4.007v8.986A4.007 4.007 0 0145.993 17H4.007A4.003 4.003 0 010 12.993V4.007z"></path><rect x="67" width="17" height="17" rx="4"></rect></g></g></svg> Published with Ghost</a>
+    <footer class="share u-container u-marginTop30">
+        <span class="share-title">Share this:</span>
+        <amp-social-share class="rounded" type="email" width="36" height="36"></amp-social-share>
+        <amp-social-share class="rounded" type="facebook" data-param-app_id="254325784911610" width="36" height="36"></amp-social-share>
+        <amp-social-share class="rounded" type="twitter" width="36" height="36"></amp-social-share>
+        <amp-social-share class="rounded" type="linkedin" width="36" height="36"></amp-social-share>
+        <amp-social-share class="rounded" type="whatsapp" width="36" height="36"></amp-social-share>
     </footer>
-    
+
+</article>
+
+
+            <div class="related u-container">
+        <div class="related-title">Related Articles</div>
+
+        <div class="story">
+            <a href="http://localhost:2368/welcome/amp" class="story-link u-block u-relative">
+                <span class="story-border u-flexCenter u-absolute">1</span>
+                <h3 class="story-title">Welcome to Ghost</h3>
+            </a>
+        </div>
+        <div class="story">
+            <a href="http://localhost:2368/using-tags/amp" class="story-link u-block u-relative">
+                <span class="story-border u-flexCenter u-absolute">2</span>
+                <h3 class="story-title">Organising your content with tags</h3>
+            </a>
+        </div>
+        <div class="story">
+            <a href="http://localhost:2368/managing-users/amp" class="story-link u-block u-relative">
+                <span class="story-border u-flexCenter u-absolute">3</span>
+                <h3 class="story-title">Managing Ghost users</h3>
+            </a>
+        </div>
+        <div class="story">
+            <a href="http://localhost:2368/private-sites/amp" class="story-link u-block u-relative">
+                <span class="story-border u-flexCenter u-absolute">4</span>
+                <h3 class="story-title">Making your site private</h3>
+            </a>
+        </div>
+        <div class="story">
+            <a href="http://localhost:2368/advanced-markdown/amp" class="story-link u-block u-relative">
+                <span class="story-border u-flexCenter u-absolute">5</span>
+                <h3 class="story-title">Advanced Markdown tips</h3>
+            </a>
+        </div>
+
+    </div>
+    </main>
+
+    <amp-sidebar id="sidenav" class="sidebar" layout="nodisplay" side="right">
+    <div class="close-sidebar u-bgColor" role="button" aria-label="close sidebar" on="tap:sidenav.close" tabindex="0">✕</div>
+
+    <ul class="nav">
+    <li class="nav-home"><a href="../../">Home</a></li>
+    <li class="nav-author"><a href="../../authors/">Author</a></li>
+    <li class="nav-she-tuan-guan-jia-gong"><a href="https://www.luxurai.com/">社團管家公</a></li>
+    <li class="nav-tags"><a href="../../tags/">Tags</a></li>
+    <li class="nav-my-youtube"><a href="https://www.youtube.com/user/poioitslash33">My Youtube</a></li>
+</ul>
+
+
+    <div class="social-media">
+            <a href="https://www.facebook.com/hank.chen.988/" target="_blank" rel="noopener noreferrer"><svg width="21" height="24" viewbox="0 0 21 24"><path d="M19.433 1.714c0.629 0 1.138 0.509 1.138 1.138v18.295c0 0.629-0.509 1.138-1.138 1.138h-5.237v-7.969h2.665l0.402-3.107h-3.067v-1.982c0-0.897 0.241-1.5 1.54-1.5l1.634-0.013v-2.772c-0.281-0.040-1.259-0.121-2.384-0.121-2.371 0-4.004 1.446-4.004 4.098v2.29h-2.679v3.107h2.679v7.969h-9.844c-0.629 0-1.138-0.509-1.138-1.138v-18.295c0-0.629 0.509-1.138 1.138-1.138h18.295z"></path></svg>
+</a>
+
+
+
+
+
+    </div>
+
+</amp-sidebar>
+
+    <footer class="footer">
+        <section class="u-container copyright u-textCenter">
+            © 2021 <a href="../../">矽谷吃翰</a>
+            Design with ♥ by <a href="https://godofredo.ninja" title="Developer Web FullStack.">GodoFredo</a>
+        </section>
+    </footer>
 </body>
