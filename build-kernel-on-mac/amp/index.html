@@ -14,19 +14,23 @@
     <meta property="og:title" content="build kernel on mac">
     <meta property="og:description" content="If we need to build the kernel on mac.  we need some tool to compile the kernel  brew install libelf wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h cp elf.h /usr/local/include/ wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h cp elftypes.">
     <meta property="og:url" content="http://localhost:2368/build-kernel-on-mac/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2021/01/IMG_5826.jpg">
     <meta property="article:published_time" content="2018-06-15T15:16:34.000Z">
-    <meta property="article:modified_time" content="2018-08-02T14:51:47.000Z">
+    <meta property="article:modified_time" content="2021-01-08T23:03:29.000Z">
     <meta property="article:tag" content="Kernel">
     
     <meta property="article:publisher" content="https://www.facebook.com/hank.chen.988/">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="build kernel on mac">
     <meta name="twitter:description" content="If we need to build the kernel on mac.  we need some tool to compile the kernel  brew install libelf wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h cp elf.h /usr/local/include/ wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h cp elftypes.">
     <meta name="twitter:url" content="http://localhost:2368/build-kernel-on-mac/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2021/01/IMG_5826.jpg">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="poioit">
     <meta name="twitter:label2" content="Filed under">
     <meta name="twitter:data2" content="Kernel">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1500">
     
     <script type="application/ld+json">
 {
@@ -58,7 +62,13 @@
     "headline": "build kernel on mac",
     "url": "http://localhost:2368/build-kernel-on-mac/",
     "datePublished": "2018-06-15T15:16:34.000Z",
-    "dateModified": "2018-08-02T14:51:47.000Z",
+    "dateModified": "2021-01-08T23:03:29.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2021/01/IMG_5826.jpg",
+        "width": 2000,
+        "height": 1500
+    },
     "keywords": "Kernel",
     "description": "If we need to build the kernel on mac.\nwe need some tool to compile the kernel\n\n 1. brew install libelf\n 2. wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elf.h\n 3. cp elf.h /usr/local/include/\n 4. wget https://opensource.apple.com/source/dtrace/dtrace-96/sys/elftypes.h\n 5. cp elftypes.h /usr/local/include/\n 6. add the following code into elf.h\n\n#define R_386_NONE 0\n#define R_386_32 1\n#define R_386_PC32 2\n#define R_ARM_NONE 0\n#define R_ARM_PC24 1\n#define R_ARM_ABS32 2\n#define R_MI",
     "mainEntityOfPage": {
@@ -654,6 +664,9 @@
                     <time class="post-date" datetime="2018-06-15">15 Jun 2018</time>
                 </section>
             </header>
+            <figure class="post-image">
+                <amp-img src="http://localhost:2368/content/images/2021/01/IMG_5826.jpg" width="600" height="340" layout="responsive"></amp-img>
+            </figure>
             <section class="post-content">
 
                 <p>If we need to build the kernel on mac.<br>
